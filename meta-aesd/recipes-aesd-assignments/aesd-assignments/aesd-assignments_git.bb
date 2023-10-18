@@ -20,10 +20,9 @@ S = "${WORKDIR}/git/server"
 # See https://git.yoctoproject.org/poky/plain/meta/conf/bitbake.conf?h=kirkstone
 FILES_${PN} += "${bindir}/aesdsocket"
 
+inherit update-rc.d
 INITSCRIPT_PACKAGES = "${PN}"
 INITSCRIPT_NAME_${PN} = "aesdsocket-start-stop.sh"
-
-inherit update-rc.d
 
 # TODO: customize these as necessary for any libraries you need for your application
 TARGET_LDFLAGS += "-pthread -lrt"
