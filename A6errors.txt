@@ -1,0 +1,1867 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are ['/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/poky/meta/recipes-core/glibc/cross-localedef-native_2.35.bb:do_populate_sysroot', '/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/poky/meta/recipes-core/glibc/ldconfig-native_2.12.1.bb:do_populate_sysroot', '/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/poky/meta/recipes-devtools/qemu/qemuwrapper-cross_1.0.bb:do_populate_sysroot', '/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/poky/meta/recipes-kernel/kmod/depmodwrapper-cross_1.0.bb:do_populate_sysroot', 'virtual:native:/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/poky/meta/recipes-core/update-rc.d/update-rc.d_0.8.bb:do_populate_sysroot', 'virtual:native:/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/poky/meta/recipes-devtools/createrepo-c/createrepo-c_0.19.0.bb:do_populate_sysroot', 'virtual:native:/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/poky/meta/recipes-devtools/dnf/dnf_4.11.1.bb:do_populate_sysroot', 'virtual:native:/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/poky/meta/recipes-devtools/makedevs/makedevs_1.0.1.bb:do_populate_sysroot', 'virtual:native:/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.5.0.bb:do_populate_sysroot', 'virtual:native:/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/poky/meta/recipes-devtools/opkg/opkg_0.5.0.bb:do_populate_sysroot', 'virtual:native:/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/poky/meta/recipes-devtools/pseudo/pseudo_git.bb:do_populate_sysroot', 'virtual:native:/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/poky/meta/recipes-devtools/rpm/rpm_4.17.1.bb:do_populate_sysroot', 'virtual:native:/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/poky/meta/recipes-extended/pbzip2/pbzip2_1.1.13.bb:do_populate_sysroot', 'virtual:native:/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/poky/meta/recipes-extended/pigz/pigz_2.7.bb:do_populate_sysroot']
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: ['cross-localedef-native', 'ldconfig-native', 'qemuwrapper-cross', 'depmodwrapper-cross', 'update-rc.d-native', 'createrepo-c-native', 'dnf-native', 'makedevs-native', 'opkg-utils-native', 'opkg-native', 'pseudo-native', 'rpm-native', 'pbzip2-native', 'pigz-native', 'qemu-native', 'shadow-native', 'kmod-native', 'elfutils-native', 'sqlite3-native', 'python3-native', 'zstd-native', 'libtool-native', 'popt-native', 'gettext-minimal-native', 'xz-native', 'lua-native', 'bzip2-native', 'libgcrypt-native', 'file-native', 'zlib-native', 'debianutils-native', 'openssl-native', 'cmake-native', 'libxml2-native', 'expat-native', 'glib-2.0-native', 'curl-native', 'perl-native', 'shared-mime-info-native', 'libsolv-native', 'libarchive-native', 'libdnf-native', 'libcomps-native', 'python3-iniparse-native', 'librepo-native', 'libmicrohttpd-native', 'libnsl2-native', 'gdbm-native', 'libtirpc-native', 'util-linux-libuuid-native', 'ncurses-native', 'readline-native', 'libffi-native', 'texinfo-dummy-native', 'libgpg-error-native', 'libcap-native', 'libpcre-native', 'util-linux-native', 'gettext-native', 'make-native', 'itstool-native', 'lzo-native', 'attr-native', 'swig-native', 'gobject-introspection-native', 'libmodulemd-native', 'libcheck-native', 'json-c-native', 'python3-setuptools-native', 'python3-wheel-native', 'python3-six-native', 'python3-installer-native', 'gpgme-native', 'gnutls-native', 'libpcre2-native', 'libcap-ng-native', 'flex-native', 'libyaml-native', 'python3-flit-core-native', 'unzip-native', 'libassuan-native', 'libidn2-native', 'gmp-native', 'nettle-native', 'libunistring-native', 'm4-native', 'gnu-config-native']
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_rootfs
+NOTE: Initializing intercept dir for /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs
+DEBUG: Collected intercepts:
+  /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/poky/scripts/postinst-intercepts/delay_to_first_boot
+  /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/poky/scripts/postinst-intercepts/postinst_intercept
+  /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/poky/scripts/postinst-intercepts/update_desktop_database
+  /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/poky/scripts/postinst-intercepts/update_font_cache
+  /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/poky/scripts/postinst-intercepts/update_gio_module_cache
+  /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/poky/scripts/postinst-intercepts/update_gtk_icon_cache
+  /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/poky/scripts/postinst-intercepts/update_gtk_immodules_cache
+  /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/poky/scripts/postinst-intercepts/update_mime_database
+  /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/poky/scripts/postinst-intercepts/update_pixbuf_cache
+  /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/poky/scripts/postinst-intercepts/update_udev_hwdb
+
+NOTE: ###### Generate rootfs #######
+NOTE: Executing '/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/recipe-sysroot-native/usr/bin/createrepo_c --update -q /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/oe-rootfs-repo' ...
+NOTE: Running /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/recipe-sysroot-native/usr/bin/dnf -v --rpmverbosity=info -y -c /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc/dnf/dnf.conf --setopt=reposdir=/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc/yum.repos.d --installroot=/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs --setopt=logdir=/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/temp --repofrompath=oe-repo,/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/oe-rootfs-repo makecache --refresh
+DEBUG: DNF version: 4.11.1
+cachedir: /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/var/cache/dnf
+Added oe-repo repo from /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/oe-rootfs-repo
+Making cache files for all metadata files.
+oe-repo: has expired and will be refreshed.
+repo: downloading from remote: oe-repo
+oe-repo                                          64 MB/s | 1.4 MB     00:00    
+oe-repo: using metadata from Mon 16 Oct 2023 10:59:37 PM UTC.
+User-Agent: falling back to 'libdnf': could not detect OS or basearch
+Metadata cache created.
+
+NOTE: Running /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/recipe-sysroot-native/usr/bin/dnf -v --rpmverbosity=info -y -c /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc/dnf/dnf.conf --setopt=reposdir=/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc/yum.repos.d --installroot=/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs --setopt=logdir=/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/temp --repofrompath=oe-repo,/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/oe-rootfs-repo --nogpgcheck install aesd-assignments base-passwd openssh packagegroup-base-extended packagegroup-core-boot run-postinsts shadow locale-base-en-us locale-base-en-gb
+DEBUG: DNF version: 4.11.1
+cachedir: /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/var/cache/dnf
+Added oe-repo repo from /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/oe-rootfs-repo
+User-Agent: falling back to 'libdnf': could not detect OS or basearch
+repo: using cache for: oe-repo
+oe-repo: using metadata from Mon 16 Oct 2023 10:59:37 PM UTC.
+Last metadata expiration check: 0:00:01 ago on Wed 18 Oct 2023 12:26:55 AM UTC.
+--> Starting dependency resolution
+---> Package aesd-assignments.cortexa57 1.0+git0+1693f02e5a-r0 will be installed
+---> Package alsa-conf.cortexa57 1.2.6.1-r0 will be installed
+---> Package alsa-state.cortexa57 0.2.0-r5 will be installed
+---> Package alsa-states.cortexa57 0.2.0-r5 will be installed
+---> Package alsa-ucm-conf.noarch 1.2.6.3-r0 will be installed
+---> Package alsa-utils-alsactl.cortexa57 1.2.6-r0 will be installed
+---> Package alsa-utils-amixer.cortexa57 1.2.6-r0 will be installed
+---> Package avahi-daemon.cortexa57 0.8-r0 will be installed
+---> Package base-files.qemuarm64 3.0.14-r89 will be installed
+---> Package base-passwd.cortexa57 3.5.29-r0 will be installed
+---> Package bluez5.cortexa57 5.65-r0 will be installed
+---> Package busybox.cortexa57 1.35.0-r0 will be installed
+---> Package busybox-hwclock.cortexa57 1.35.0-r0 will be installed
+---> Package busybox-syslog.cortexa57 1.35.0-r0 will be installed
+---> Package busybox-udhcpc.cortexa57 1.35.0-r0 will be installed
+---> Package dbus-1.cortexa57 1.14.8-r0 will be installed
+---> Package dbus-common.cortexa57 1.14.8-r0 will be installed
+---> Package dbus-tools.cortexa57 1.14.8-r0 will be installed
+---> Package dosfstools.cortexa57 4.2-r0 will be installed
+---> Package eudev.cortexa57 3.2.10-r0 will be installed
+---> Package glibc-binary-localedata-en-gb.cortexa57 2.35-r0 will be installed
+---> Package glibc-binary-localedata-en-us.cortexa57 2.35-r0 will be installed
+---> Package init-ifupdown.qemuarm64 1.0-r7 will be installed
+---> Package init-system-helpers-service.cortexa57 1.62-r0 will be installed
+---> Package initscripts.cortexa57 1.0-r155 will be installed
+---> Package initscripts-functions.cortexa57 1.0-r155 will be installed
+---> Package kernel-5.15.124-yocto-standard.qemuarm64 5.15.124+git0+f484a7f175_f0e7afd594-r0 will be installed
+---> Package kernel-image-5.15.124-yocto-standard.qemuarm64 5.15.124+git0+f484a7f175_f0e7afd594-r0 will be installed
+---> Package kernel-image-image-5.15.124-yocto-standard.qemuarm64 5.15.124+git0+f484a7f175_f0e7afd594-r0 will be installed
+---> Package kernel-module-nls-utf8-5.15.124-yocto-standard.qemuarm64 5.15.124+git0+f484a7f175_f0e7afd594-r0 will be installed
+---> Package kmod.cortexa57 29-r0 will be installed
+---> Package ldconfig.cortexa57 2.35-r0 will be installed
+---> Package libasound2.cortexa57 1.2.6.1-r0 will be installed
+---> Package libattr1.cortexa57 2.5.1-r0 will be installed
+---> Package libavahi-common3.cortexa57 0.8-r0 will be installed
+---> Package libavahi-core7.cortexa57 0.8-r0 will be installed
+---> Package libblkid1.cortexa57 2.37.4-r0 will be installed
+---> Package libc6.cortexa57 2.35-r0 will be installed
+---> Package libcap.cortexa57 2.66-r0 will be installed
+---> Package libcrypt2.cortexa57 4.4.33-r0 will be installed
+---> Package libcrypto3.cortexa57 3.0.11-r0 will be installed
+---> Package libdaemon0.cortexa57 0.14-r0 will be installed
+---> Package libdbus-1-3.cortexa57 1.14.8-r0 will be installed
+---> Package libexpat1.cortexa57 2.5.0-r0 will be installed
+---> Package libffi8.cortexa57 3.4.4-r0 will be installed
+---> Package libglib-2.0-0.cortexa57 1:2.72.3-r0 will be installed
+---> Package libkmod2.cortexa57 29-r0 will be installed
+---> Package liblzma5.cortexa57 5.2.6-r0 will be installed
+---> Package libmount1.cortexa57 2.37.4-r0 will be installed
+---> Package libnss-mdns.cortexa57 0.15.1-r0 will be installed
+---> Package libpcre1.cortexa57 8.45-r0 will be installed
+---> Package libreadline8.cortexa57 8.1.2-r0 will be installed
+---> Package libtinfo5.cortexa57 6.3+20220423-r0 will be installed
+---> Package libtirpc3.cortexa57 1.3.2-r0 will be installed
+---> Package libudev1.cortexa57 3.2.10-r0 will be installed
+---> Package libx11-6.cortexa57 1:1.7.3.1-r0 will be installed
+---> Package libxau6.cortexa57 1:1.0.9-r0 will be installed
+---> Package libxcb1.cortexa57 1.14-r0 will be installed
+---> Package libxdmcp6.cortexa57 1:1.1.3-r0 will be installed
+---> Package libxml2.cortexa57 2.9.14-r0 will be installed
+---> Package libz1.cortexa57 1.2.11-r0 will be installed
+---> Package locale-base-en-gb.cortexa57 2.35-r0 will be installed
+---> Package locale-base-en-us.cortexa57 2.35-r0 will be installed
+---> Package modutils-initscripts.cortexa57 1.0-r7 will be installed
+---> Package ncurses-terminfo-base.cortexa57 6.3+20220423-r0 will be installed
+---> Package netbase.noarch 1:6.3-r0 will be installed
+---> Package openssh.cortexa57 8.9p1-r0 will be installed
+---> Package openssh-keygen.cortexa57 8.9p1-r0 will be installed
+---> Package openssh-scp.cortexa57 8.9p1-r0 will be installed
+---> Package openssh-sftp-server.cortexa57 8.9p1-r0 will be installed
+---> Package openssh-ssh.cortexa57 8.9p1-r0 will be installed
+---> Package openssh-sshd.cortexa57 8.9p1-r0 will be installed
+---> Package openssl-conf.cortexa57 3.0.11-r0 will be installed
+---> Package openssl-ossl-module-legacy.cortexa57 3.0.11-r0 will be installed
+---> Package packagegroup-base.qemuarm64 1.0-r83 will be installed
+---> Package packagegroup-base-alsa.qemuarm64 1.0-r83 will be installed
+---> Package packagegroup-base-bluetooth.qemuarm64 1.0-r83 will be installed
+---> Package packagegroup-base-extended.qemuarm64 1.0-r83 will be installed
+---> Package packagegroup-base-ipv6.qemuarm64 1.0-r83 will be installed
+---> Package packagegroup-base-nfs.qemuarm64 1.0-r83 will be installed
+---> Package packagegroup-base-usbgadget.qemuarm64 1.0-r83 will be installed
+---> Package packagegroup-base-vfat.qemuarm64 1.0-r83 will be installed
+---> Package packagegroup-base-zeroconf.qemuarm64 1.0-r83 will be installed
+---> Package packagegroup-core-boot.qemuarm64 1.0-r17 will be installed
+---> Package packagegroup-distro-base.qemuarm64 1.0-r83 will be installed
+---> Package packagegroup-machine-base.qemuarm64 1.0-r83 will be installed
+---> Package rpcbind.cortexa57 1.2.6-r0 will be installed
+---> Package run-postinsts.noarch 1.0-r10 will be installed
+---> Package shadow.cortexa57 4.11.1-r0 will be installed
+---> Package shadow-base.cortexa57 4.11.1-r0 will be installed
+---> Package shadow-securetty.qemuarm64 4.6-r3 will be installed
+---> Package shared-mime-info.cortexa57 2.1-r0 will be installed
+---> Package sysvinit.cortexa57 3.01-r0 will be installed
+---> Package sysvinit-inittab.qemuarm64 2.88dsf-r10 will be installed
+---> Package sysvinit-pidof.cortexa57 3.01-r0 will be installed
+---> Package update-alternatives-opkg.cortexa57 0.5.0-r0 will be installed
+---> Package update-rc.d.noarch 0.8-r0 will be installed
+---> Package util-linux-sulogin.cortexa57 2.37.4-r0 will be installed
+--> Finished dependency resolution
+Dependencies resolved.
+==================================================================================================================
+ Package                                          Arch       Version                                Repo      Size
+==================================================================================================================
+Installing:
+ aesd-assignments                                 cortexa57  1.0+git0+1693f02e5a-r0                 oe-repo   13 k
+ base-passwd                                      cortexa57  3.5.29-r0                              oe-repo  7.3 k
+ locale-base-en-gb                                cortexa57  2.35-r0                                oe-repo  5.8 k
+ locale-base-en-us                                cortexa57  2.35-r0                                oe-repo  5.8 k
+ openssh                                          cortexa57  8.9p1-r0                               oe-repo  6.0 k
+ packagegroup-base-extended                       qemuarm64  1.0-r83                                oe-repo  5.7 k
+ packagegroup-core-boot                           qemuarm64  1.0-r17                                oe-repo  5.8 k
+ run-postinsts                                    noarch     1.0-r10                                oe-repo  8.3 k
+ shadow                                           cortexa57  4.11.1-r0                              oe-repo  316 k
+Installing dependencies:
+ alsa-conf                                        cortexa57  1.2.6.1-r0                             oe-repo   30 k
+ alsa-state                                       cortexa57  0.2.0-r5                               oe-repo  8.2 k
+ alsa-ucm-conf                                    noarch     1.2.6.3-r0                             oe-repo   84 k
+ alsa-utils-alsactl                               cortexa57  1.2.6-r0                               oe-repo   54 k
+ alsa-utils-amixer                                cortexa57  1.2.6-r0                               oe-repo   24 k
+ avahi-daemon                                     cortexa57  0.8-r0                                 oe-repo   72 k
+ base-files                                       qemuarm64  3.0.14-r89                             oe-repo   13 k
+ bluez5                                           cortexa57  5.65-r0                                oe-repo  1.1 M
+ busybox                                          cortexa57  1.35.0-r0                              oe-repo  383 k
+ busybox-hwclock                                  cortexa57  1.35.0-r0                              oe-repo  8.6 k
+ dbus-1                                           cortexa57  1.14.8-r0                              oe-repo  172 k
+ dbus-common                                      cortexa57  1.14.8-r0                              oe-repo   16 k
+ dbus-tools                                       cortexa57  1.14.8-r0                              oe-repo   26 k
+ eudev                                            cortexa57  3.2.10-r0                              oe-repo  257 k
+ glibc-binary-localedata-en-gb                    cortexa57  2.35-r0                                oe-repo  463 k
+ glibc-binary-localedata-en-us                    cortexa57  2.35-r0                                oe-repo  464 k
+ init-ifupdown                                    qemuarm64  1.0-r7                                 oe-repo  9.4 k
+ init-system-helpers-service                      cortexa57  1.62-r0                                oe-repo  9.6 k
+ initscripts                                      cortexa57  1.0-r155                               oe-repo   23 k
+ initscripts-functions                            cortexa57  1.0-r155                               oe-repo  7.6 k
+ kernel-5.15.124-yocto-standard                   qemuarm64  5.15.124+git0+f484a7f175_f0e7afd594-r0 oe-repo   25 k
+ kernel-image-image-5.15.124-yocto-standard       qemuarm64  5.15.124+git0+f484a7f175_f0e7afd594-r0 oe-repo  6.2 M
+ kmod                                             cortexa57  29-r0                                  oe-repo   74 k
+ libasound2                                       cortexa57  1.2.6.1-r0                             oe-repo  363 k
+ libattr1                                         cortexa57  2.5.1-r0                               oe-repo   14 k
+ libavahi-common3                                 cortexa57  0.8-r0                                 oe-repo   27 k
+ libavahi-core7                                   cortexa57  0.8-r0                                 oe-repo   89 k
+ libblkid1                                        cortexa57  2.37.4-r0                              oe-repo  147 k
+ libc6                                            cortexa57  2.35-r0                                oe-repo  1.0 M
+ libcap                                           cortexa57  2.66-r0                                oe-repo   30 k
+ libcrypt2                                        cortexa57  4.4.33-r0                              oe-repo   90 k
+ libcrypto3                                       cortexa57  3.0.11-r0                              oe-repo  1.4 M
+ libdaemon0                                       cortexa57  0.14-r0                                oe-repo   17 k
+ libdbus-1-3                                      cortexa57  1.14.8-r0                              oe-repo  199 k
+ libexpat1                                        cortexa57  2.5.0-r0                               oe-repo   68 k
+ libffi8                                          cortexa57  3.4.4-r0                               oe-repo   23 k
+ libglib-2.0-0                                    cortexa57  1:2.72.3-r0                            oe-repo  1.2 M
+ libkmod2                                         cortexa57  29-r0                                  oe-repo   44 k
+ liblzma5                                         cortexa57  5.2.6-r0                               oe-repo   82 k
+ libmount1                                        cortexa57  2.37.4-r0                              oe-repo  161 k
+ libnss-mdns                                      cortexa57  0.15.1-r0                              oe-repo   20 k
+ libpcre1                                         cortexa57  8.45-r0                                oe-repo  159 k
+ libreadline8                                     cortexa57  8.1.2-r0                               oe-repo  143 k
+ libtinfo5                                        cortexa57  6.3+20220423-r0                        oe-repo   68 k
+ libtirpc3                                        cortexa57  1.3.2-r0                               oe-repo   72 k
+ libudev1                                         cortexa57  3.2.10-r0                              oe-repo   69 k
+ libx11-6                                         cortexa57  1:1.7.3.1-r0                           oe-repo  632 k
+ libxau6                                          cortexa57  1:1.0.9-r0                             oe-repo   11 k
+ libxcb1                                          cortexa57  1.14-r0                                oe-repo   50 k
+ libxdmcp6                                        cortexa57  1:1.1.3-r0                             oe-repo   15 k
+ libxml2                                          cortexa57  2.9.14-r0                              oe-repo  538 k
+ libz1                                            cortexa57  1.2.11-r0                              oe-repo   51 k
+ modutils-initscripts                             cortexa57  1.0-r7                                 oe-repo  7.9 k
+ netbase                                          noarch     1:6.3-r0                               oe-repo   14 k
+ openssh-keygen                                   cortexa57  8.9p1-r0                               oe-repo  206 k
+ openssh-scp                                      cortexa57  8.9p1-r0                               oe-repo   97 k
+ openssh-sftp-server                              cortexa57  8.9p1-r0                               oe-repo   69 k
+ openssh-ssh                                      cortexa57  8.9p1-r0                               oe-repo  350 k
+ openssh-sshd                                     cortexa57  8.9p1-r0                               oe-repo  386 k
+ packagegroup-base                                qemuarm64  1.0-r83                                oe-repo  6.2 k
+ packagegroup-base-alsa                           qemuarm64  1.0-r83                                oe-repo  5.8 k
+ packagegroup-base-bluetooth                      qemuarm64  1.0-r83                                oe-repo  5.9 k
+ packagegroup-base-ipv6                           qemuarm64  1.0-r83                                oe-repo  5.7 k
+ packagegroup-base-nfs                            qemuarm64  1.0-r83                                oe-repo  5.7 k
+ packagegroup-base-usbgadget                      qemuarm64  1.0-r83                                oe-repo  5.8 k
+ packagegroup-base-vfat                           qemuarm64  1.0-r83                                oe-repo  5.8 k
+ packagegroup-base-zeroconf                       qemuarm64  1.0-r83                                oe-repo  5.6 k
+ packagegroup-distro-base                         qemuarm64  1.0-r83                                oe-repo  5.7 k
+ packagegroup-machine-base                        qemuarm64  1.0-r83                                oe-repo  5.6 k
+ rpcbind                                          cortexa57  1.2.6-r0                               oe-repo   47 k
+ shadow-base                                      cortexa57  4.11.1-r0                              oe-repo   63 k
+ shadow-securetty                                 qemuarm64  4.6-r3                                 oe-repo  6.8 k
+ sysvinit                                         cortexa57  3.01-r0                                oe-repo   71 k
+ sysvinit-inittab                                 qemuarm64  2.88dsf-r10                            oe-repo  8.1 k
+ sysvinit-pidof                                   cortexa57  3.01-r0                                oe-repo   17 k
+ update-alternatives-opkg                         cortexa57  0.5.0-r0                               oe-repo  8.5 k
+ util-linux-sulogin                               cortexa57  2.37.4-r0                              oe-repo   31 k
+Installing weak dependencies:
+ alsa-states                                      cortexa57  0.2.0-r5                               oe-repo  6.5 k
+ busybox-syslog                                   cortexa57  1.35.0-r0                              oe-repo  9.8 k
+ busybox-udhcpc                                   cortexa57  1.35.0-r0                              oe-repo  8.0 k
+ dosfstools                                       cortexa57  4.2-r0                                 oe-repo   66 k
+ kernel-image-5.15.124-yocto-standard             qemuarm64  5.15.124+git0+f484a7f175_f0e7afd594-r0 oe-repo  5.8 k
+ kernel-module-nls-utf8-5.15.124-yocto-standard   qemuarm64  5.15.124+git0+f484a7f175_f0e7afd594-r0 oe-repo  8.9 k
+ ldconfig                                         cortexa57  2.35-r0                                oe-repo  337 k
+ ncurses-terminfo-base                            cortexa57  6.3+20220423-r0                        oe-repo   15 k
+ openssl-conf                                     cortexa57  3.0.11-r0                              oe-repo   11 k
+ openssl-ossl-module-legacy                       cortexa57  3.0.11-r0                              oe-repo   40 k
+ shared-mime-info                                 cortexa57  2.1-r0                                 oe-repo  435 k
+ update-rc.d                                      noarch     0.8-r0                                 oe-repo  8.6 k
+
+Transaction Summary
+==================================================================================================================
+Install  98 Packages
+
+Total size: 19 M
+Installed size: 62 M
+Downloading Packages:
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+RPMDB altered outside of DNF.
+  Preparing        :                                                        1/1 
+  Installing       : busybox-udhcpc-1.35.0-r0.cortexa57                    1/98 
+  Installing       : ldconfig-2.35-r0.cortexa57                            2/98 
+  Installing       : update-alternatives-opkg-0.5.0-r0.cortexa57           3/98 
+  Installing       : libc6-2.35-r0.cortexa57                               4/98 
+  Running scriptlet: libc6-2.35-r0.cortexa57                               4/98 
+%post(libc6-2.35-r0.cortexa57): scriptlet start
+%post(libc6-2.35-r0.cortexa57): execv(/bin/sh) pid 2667
++ set -e
++ [ x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs = x ]
+%post(libc6-2.35-r0.cortexa57): waitpid(2667) rc 2667 status 0
+
+  Installing       : busybox-1.35.0-r0.cortexa57                           5/98 
+  Running scriptlet: busybox-1.35.0-r0.cortexa57                           5/98 
+%post(busybox-1.35.0-r0.cortexa57): scriptlet start
+%post(busybox-1.35.0-r0.cortexa57): execv(/bin/sh) pid 2668
++ set -e
++ test -n 2
++ test x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs = x
++ grep -q ^/bin/bash$ /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc/busybox.links.nosuid /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc/busybox.links.suid
++ update-alternatives --install /bin/ash ash /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/ash to /bin/busybox.nosuid
++ update-alternatives --install /bin/base32 base32 /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/base32 to /bin/busybox.nosuid
++ update-alternatives --install /bin/cat cat /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/cat to /bin/busybox.nosuid
++ update-alternatives --install /bin/chattr chattr /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/chattr to /bin/busybox.nosuid
++ update-alternatives --install /bin/chgrp chgrp /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/chgrp to /bin/busybox.nosuid
++ update-alternatives --install /bin/chmod chmod /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/chmod to /bin/busybox.nosuid
++ update-alternatives --install /bin/chown chown /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/chown to /bin/busybox.nosuid
++ update-alternatives --install /bin/cp cp /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/cp to /bin/busybox.nosuid
++ update-alternatives --install /bin/cpio cpio /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/cpio to /bin/busybox.nosuid
++ update-alternatives --install /bin/date date /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/date to /bin/busybox.nosuid
++ update-alternatives --install /bin/dd dd /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/dd to /bin/busybox.nosuid
++ update-alternatives --install /bin/df df /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/df to /bin/busybox.nosuid
++ update-alternatives --install /bin/dmesg dmesg /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/dmesg to /bin/busybox.nosuid
++ update-alternatives --install /bin/dnsdomainname dnsdomainname /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/dnsdomainname to /bin/busybox.nosuid
++ update-alternatives --install /bin/dumpkmap dumpkmap /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/dumpkmap to /bin/busybox.nosuid
++ update-alternatives --install /bin/echo echo /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/echo to /bin/busybox.nosuid
++ update-alternatives --install /bin/egrep egrep /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/egrep to /bin/busybox.nosuid
++ update-alternatives --install /bin/false false /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/false to /bin/busybox.nosuid
++ update-alternatives --install /bin/fgrep fgrep /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/fgrep to /bin/busybox.nosuid
++ update-alternatives --install /bin/getopt getopt /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/getopt to /bin/busybox.nosuid
++ update-alternatives --install /bin/grep grep /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/grep to /bin/busybox.nosuid
++ update-alternatives --install /bin/gunzip gunzip /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/gunzip to /bin/busybox.nosuid
++ update-alternatives --install /bin/gzip gzip /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/gzip to /bin/busybox.nosuid
++ update-alternatives --install /bin/hostname hostname /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/hostname to /bin/busybox.nosuid
++ update-alternatives --install /bin/kill kill /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/kill to /bin/busybox.nosuid
++ update-alternatives --install /bin/ln ln /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/ln to /bin/busybox.nosuid
++ update-alternatives --install /bin/ls ls /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/ls to /bin/busybox.nosuid
++ update-alternatives --install /bin/mkdir mkdir /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/mkdir to /bin/busybox.nosuid
++ update-alternatives --install /bin/mknod mknod /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/mknod to /bin/busybox.nosuid
++ update-alternatives --install /bin/mktemp mktemp /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/mktemp to /bin/busybox.nosuid
++ update-alternatives --install /bin/more more /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/more to /bin/busybox.nosuid
++ update-alternatives --install /bin/mount mount /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/mount to /bin/busybox.nosuid
++ update-alternatives --install /bin/mountpoint mountpoint /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/mountpoint to /bin/busybox.nosuid
++ update-alternatives --install /bin/mv mv /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/mv to /bin/busybox.nosuid
++ update-alternatives --install /bin/netstat netstat /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/netstat to /bin/busybox.nosuid
++ update-alternatives --install /bin/pidof pidof /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/pidof to /bin/busybox.nosuid
++ update-alternatives --install /bin/ps ps /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/ps to /bin/busybox.nosuid
++ update-alternatives --install /bin/pwd pwd /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/pwd to /bin/busybox.nosuid
++ update-alternatives --install /bin/rev rev /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/rev to /bin/busybox.nosuid
++ update-alternatives --install /bin/rm rm /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/rm to /bin/busybox.nosuid
++ update-alternatives --install /bin/rmdir rmdir /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/rmdir to /bin/busybox.nosuid
++ update-alternatives --install /bin/run-parts run-parts /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/run-parts to /bin/busybox.nosuid
++ update-alternatives --install /bin/sed sed /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/sed to /bin/busybox.nosuid
++ update-alternatives --install /bin/sh sh /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/sh to /bin/busybox.nosuid
++ update-alternatives --install /bin/sleep sleep /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/sleep to /bin/busybox.nosuid
++ update-alternatives --install /bin/stat stat /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/stat to /bin/busybox.nosuid
++ update-alternatives --install /bin/stty stty /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/stty to /bin/busybox.nosuid
++ update-alternatives --install /bin/sync sync /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/sync to /bin/busybox.nosuid
++ update-alternatives --install /bin/tar tar /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/tar to /bin/busybox.nosuid
++ update-alternatives --install /bin/touch touch /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/touch to /bin/busybox.nosuid
++ update-alternatives --install /bin/true true /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/true to /bin/busybox.nosuid
++ update-alternatives --install /bin/umount umount /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/umount to /bin/busybox.nosuid
++ update-alternatives --install /bin/uname uname /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/uname to /bin/busybox.nosuid
++ update-alternatives --install /bin/usleep usleep /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/usleep to /bin/busybox.nosuid
++ update-alternatives --install /bin/vi vi /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/vi to /bin/busybox.nosuid
++ update-alternatives --install /bin/watch watch /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/watch to /bin/busybox.nosuid
++ update-alternatives --install /bin/zcat zcat /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/zcat to /bin/busybox.nosuid
++ update-alternatives --install /sbin/blkid blkid /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/blkid to /bin/busybox.nosuid
++ update-alternatives --install /sbin/depmod depmod /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/depmod to /bin/busybox.nosuid
++ update-alternatives --install /sbin/fdisk fdisk /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/fdisk to /bin/busybox.nosuid
++ update-alternatives --install /sbin/fsck fsck /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/fsck to /bin/busybox.nosuid
++ update-alternatives --install /sbin/fstrim fstrim /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/fstrim to /bin/busybox.nosuid
++ update-alternatives --install /sbin/getty getty /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/getty to /bin/busybox.nosuid
++ update-alternatives --install /sbin/hwclock hwclock /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/hwclock to /bin/busybox.nosuid
++ update-alternatives --install /sbin/ifconfig ifconfig /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/ifconfig to /bin/busybox.nosuid
++ update-alternatives --install /sbin/ifdown ifdown /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/ifdown to /bin/busybox.nosuid
++ update-alternatives --install /sbin/ifup ifup /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/ifup to /bin/busybox.nosuid
++ update-alternatives --install /sbin/insmod insmod /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/insmod to /bin/busybox.nosuid
++ update-alternatives --install /sbin/ip ip /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/ip to /bin/busybox.nosuid
++ update-alternatives --install /sbin/loadkmap loadkmap /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/loadkmap to /bin/busybox.nosuid
++ update-alternatives --install /sbin/logread logread /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/logread to /bin/busybox.nosuid
++ update-alternatives --install /sbin/losetup losetup /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/losetup to /bin/busybox.nosuid
++ update-alternatives --install /sbin/lsmod lsmod /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/lsmod to /bin/busybox.nosuid
++ update-alternatives --install /sbin/mkswap mkswap /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/mkswap to /bin/busybox.nosuid
++ update-alternatives --install /sbin/modprobe modprobe /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/modprobe to /bin/busybox.nosuid
++ update-alternatives --install /sbin/pivot_root pivot_root /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/pivot_root to /bin/busybox.nosuid
++ update-alternatives --install /sbin/reboot reboot /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/reboot to /bin/busybox.nosuid
++ update-alternatives --install /sbin/rmmod rmmod /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/rmmod to /bin/busybox.nosuid
++ update-alternatives --install /sbin/route route /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/route to /bin/busybox.nosuid
++ update-alternatives --install /sbin/setconsole setconsole /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/setconsole to /bin/busybox.nosuid
++ update-alternatives --install /sbin/start-stop-daemon start-stop-daemon /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/start-stop-daemon to /bin/busybox.nosuid
++ update-alternatives --install /sbin/sulogin sulogin /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/sulogin to /bin/busybox.nosuid
++ update-alternatives --install /sbin/swapoff swapoff /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/swapoff to /bin/busybox.nosuid
++ update-alternatives --install /sbin/swapon swapon /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/swapon to /bin/busybox.nosuid
++ update-alternatives --install /sbin/switch_root switch_root /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/switch_root to /bin/busybox.nosuid
++ update-alternatives --install /sbin/sysctl sysctl /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/sysctl to /bin/busybox.nosuid
++ update-alternatives --install /sbin/udhcpc udhcpc /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/udhcpc to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/[ lbracket /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/[ to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/[[ [[ /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/[[ to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/ascii ascii /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/ascii to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/awk awk /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/awk to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/basename basename /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/basename to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/bunzip2 bunzip2 /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/bunzip2 to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/bzcat bzcat /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/bzcat to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/bzip2 bzip2 /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/bzip2 to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/chvt chvt /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/chvt to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/clear clear /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/clear to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/cmp cmp /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/cmp to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/crc32 crc32 /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/crc32 to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/cut cut /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/cut to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/dc dc /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/dc to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/deallocvt deallocvt /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/deallocvt to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/diff diff /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/diff to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/dirname dirname /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/dirname to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/du du /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/du to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/dumpleases dumpleases /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/dumpleases to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/env env /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/env to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/expr expr /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/expr to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/find find /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/find to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/flock flock /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/flock to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/free free /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/free to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/fuser fuser /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/fuser to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/groups groups /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/groups to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/head head /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/head to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/hexdump hexdump /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/hexdump to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/id id /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/id to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/killall killall /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/killall to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/less less /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/less to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/logger logger /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/logger to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/logname logname /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/logname to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/lzcat lzcat /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/lzcat to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/md5sum md5sum /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/md5sum to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/mesg mesg /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/mesg to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/microcom microcom /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/microcom to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/mkfifo mkfifo /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/mkfifo to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/nc nc /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/nc to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/nohup nohup /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/nohup to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/nproc nproc /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/nproc to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/nslookup nslookup /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/nslookup to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/od od /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/od to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/openvt openvt /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/openvt to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/patch patch /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/patch to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/pgrep pgrep /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/pgrep to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/printf printf /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/printf to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/readlink readlink /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/readlink to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/realpath realpath /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/realpath to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/renice renice /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/renice to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/reset reset /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/reset to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/resize resize /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/resize to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/seq seq /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/seq to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/setsid setsid /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/setsid to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/sha1sum sha1sum /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/sha1sum to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/sha256sum sha256sum /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/sha256sum to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/shuf shuf /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/shuf to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/sort sort /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/sort to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/strings strings /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/strings to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/tail tail /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/tail to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/tee tee /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/tee to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/telnet telnet /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/telnet to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/test test /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/test to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/tftp tftp /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/tftp to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/time time /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/time to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/top top /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/top to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/tr tr /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/tr to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/ts ts /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/ts to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/tty tty /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/tty to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/uniq uniq /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/uniq to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/unlink unlink /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/unlink to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/unzip unzip /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/unzip to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/uptime uptime /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/uptime to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/users users /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/users to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/wc wc /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/wc to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/wget wget /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/wget to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/which which /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/which to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/who who /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/who to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/whoami whoami /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/whoami to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/xargs xargs /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/xargs to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/xzcat xzcat /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/xzcat to /bin/busybox.nosuid
++ update-alternatives --install /usr/bin/yes yes /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/yes to /bin/busybox.nosuid
++ update-alternatives --install /usr/sbin/addgroup addgroup /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/sbin/addgroup to /bin/busybox.nosuid
++ update-alternatives --install /usr/sbin/adduser adduser /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/sbin/adduser to /bin/busybox.nosuid
++ update-alternatives --install /usr/sbin/chroot chroot /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/sbin/chroot to /bin/busybox.nosuid
++ update-alternatives --install /usr/sbin/delgroup delgroup /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/sbin/delgroup to /bin/busybox.nosuid
++ update-alternatives --install /usr/sbin/deluser deluser /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/sbin/deluser to /bin/busybox.nosuid
++ update-alternatives --install /usr/sbin/fbset fbset /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/sbin/fbset to /bin/busybox.nosuid
++ update-alternatives --install /usr/sbin/loadfont loadfont /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/sbin/loadfont to /bin/busybox.nosuid
++ update-alternatives --install /usr/sbin/rdate rdate /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/sbin/rdate to /bin/busybox.nosuid
++ update-alternatives --install /usr/sbin/rfkill rfkill /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/sbin/rfkill to /bin/busybox.nosuid
++ update-alternatives --install /usr/sbin/udhcpd udhcpd /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/sbin/udhcpd to /bin/busybox.nosuid
++ update-alternatives --install /bin/login login /bin/busybox.suid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/login to /bin/busybox.suid
++ update-alternatives --install /bin/ping ping /bin/busybox.suid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/ping to /bin/busybox.suid
++ update-alternatives --install /bin/ping6 ping6 /bin/busybox.suid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/ping6 to /bin/busybox.suid
++ update-alternatives --install /bin/su su /bin/busybox.suid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/su to /bin/busybox.suid
++ update-alternatives --install /usr/bin/passwd passwd /bin/busybox.suid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/passwd to /bin/busybox.suid
++ update-alternatives --install /usr/bin/traceroute traceroute /bin/busybox.suid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/traceroute to /bin/busybox.suid
++ update-alternatives --install /usr/bin/vlock vlock /bin/busybox.suid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/vlock to /bin/busybox.suid
++ BUSYBOX=
++ [ x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs = x ]
++ [ x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs = x ]
+%post(busybox-1.35.0-r0.cortexa57): waitpid(2668) rc 2668 status 0
+
+  Installing       : update-rc.d-0.8-r0.noarch                             6/98 
+  Running scriptlet: base-passwd-3.5.29-r0.cortexa57                       7/98 
+%prein(base-passwd-3.5.29-r0.cortexa57): scriptlet start
+%prein(base-passwd-3.5.29-r0.cortexa57): execv(/bin/sh) pid 8178
++ set -e
++ mkdir -p /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc
++ [ ! -e /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc/passwd ]
++ cat
++ [ ! -e /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc/group ]
++ cat
+%prein(base-passwd-3.5.29-r0.cortexa57): waitpid(8178) rc 8178 status 0
+
+  Installing       : base-passwd-3.5.29-r0.cortexa57                       7/98 
+  Installing       : libz1-1.2.11-r0.cortexa57                             8/98 
+  Running scriptlet: libz1-1.2.11-r0.cortexa57                             8/98 
+%post(libz1-1.2.11-r0.cortexa57): scriptlet start
+%post(libz1-1.2.11-r0.cortexa57): execv(/bin/sh) pid 8182
++ set -e
++ [ x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs = x ]
+%post(libz1-1.2.11-r0.cortexa57): waitpid(8182) rc 8182 status 0
+
+  Running scriptlet: base-files-3.0.14-r89.qemuarm64                       9/98 
+%prein(base-files-3.0.14-r89.qemuarm64): scriptlet start
+%prein(base-files-3.0.14-r89.qemuarm64): execv(/bin/sh) pid 8183
++ set -e
++ [ x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs = x ]
+%prein(base-files-3.0.14-r89.qemuarm64): waitpid(8183) rc 8183 status 0
+
+  Installing       : base-files-3.0.14-r89.qemuarm64                       9/98 
+  Installing       : initscripts-functions-1.0-r155.cortexa57             10/98 
+  Installing       : libcrypt2-4.4.33-r0.cortexa57                        11/98 
+  Running scriptlet: libcrypt2-4.4.33-r0.cortexa57                        11/98 
+%post(libcrypt2-4.4.33-r0.cortexa57): scriptlet start
+%post(libcrypt2-4.4.33-r0.cortexa57): execv(/bin/sh) pid 8184
++ set -e
++ [ x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs = x ]
+%post(libcrypt2-4.4.33-r0.cortexa57): waitpid(8184) rc 8184 status 0
+
+  Installing       : libavahi-common3-0.8-r0.cortexa57                    12/98 
+  Running scriptlet: libavahi-common3-0.8-r0.cortexa57                    12/98 
+%post(libavahi-common3-0.8-r0.cortexa57): scriptlet start
+%post(libavahi-common3-0.8-r0.cortexa57): execv(/bin/sh) pid 8185
++ set -e
++ [ x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs = x ]
+%post(libavahi-common3-0.8-r0.cortexa57): waitpid(8185) rc 8185 status 0
+
+  Installing       : libblkid1-2.37.4-r0.cortexa57                        13/98 
+  Running scriptlet: libblkid1-2.37.4-r0.cortexa57                        13/98 
+%post(libblkid1-2.37.4-r0.cortexa57): scriptlet start
+%post(libblkid1-2.37.4-r0.cortexa57): execv(/bin/sh) pid 8186
++ set -e
++ [ x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs = x ]
+%post(libblkid1-2.37.4-r0.cortexa57): waitpid(8186) rc 8186 status 0
+
+  Installing       : libexpat1-2.5.0-r0.cortexa57                         14/98 
+  Running scriptlet: libexpat1-2.5.0-r0.cortexa57                         14/98 
+%post(libexpat1-2.5.0-r0.cortexa57): scriptlet start
+%post(libexpat1-2.5.0-r0.cortexa57): execv(/bin/sh) pid 8187
++ set -e
++ [ x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs = x ]
+%post(libexpat1-2.5.0-r0.cortexa57): waitpid(8187) rc 8187 status 0
+
+  Installing       : liblzma5-5.2.6-r0.cortexa57                          15/98 
+  Running scriptlet: liblzma5-5.2.6-r0.cortexa57                          15/98 
+%post(liblzma5-5.2.6-r0.cortexa57): scriptlet start
+%post(liblzma5-5.2.6-r0.cortexa57): execv(/bin/sh) pid 8188
++ set -e
++ [ x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs = x ]
+%post(liblzma5-5.2.6-r0.cortexa57): waitpid(8188) rc 8188 status 0
+
+  Installing       : netbase-1:6.3-r0.noarch                              16/98 
+  Installing       : alsa-states-0.2.0-r5.cortexa57                       17/98 
+  Installing       : init-ifupdown-1.0-r7.qemuarm64                       18/98 
+  Running scriptlet: init-ifupdown-1.0-r7.qemuarm64                       18/98 
+%post(init-ifupdown-1.0-r7.qemuarm64): scriptlet start
+%post(init-ifupdown-1.0-r7.qemuarm64): execv(/bin/sh) pid 8189
++ set -e
++ true
++ type update-rc.d
++ [ -n /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs ]
++ OPT=-r /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs
++ update-rc.d -r /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs networking start 01 2 3 4 5 . stop 80 0 6 1 .
+ Adding system startup for /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc/init.d/networking.
+%post(init-ifupdown-1.0-r7.qemuarm64): waitpid(8189) rc 8189 status 0
+
+  Installing       : kmod-29-r0.cortexa57                                 19/98 
+  Running scriptlet: kmod-29-r0.cortexa57                                 19/98 
+%post(kmod-29-r0.cortexa57): scriptlet start
+%post(kmod-29-r0.cortexa57): execv(/bin/sh) pid 8258
++ set -e
++ update-alternatives --install /sbin/insmod insmod /sbin/insmod.kmod 70
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/insmod to /sbin/insmod.kmod
++ update-alternatives --install /sbin/modprobe modprobe /sbin/modprobe.kmod 70
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/modprobe to /sbin/modprobe.kmod
++ update-alternatives --install /sbin/rmmod rmmod /sbin/rmmod.kmod 70
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/rmmod to /sbin/rmmod.kmod
++ update-alternatives --install /sbin/modinfo modinfo /sbin/modinfo.kmod 70
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/modinfo to /sbin/modinfo.kmod
++ update-alternatives --install /bin/lsmod bin-lsmod /bin/lsmod.kmod 70
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/lsmod to /bin/lsmod.kmod
++ update-alternatives --install /sbin/lsmod lsmod /bin/lsmod.kmod 70
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/lsmod to /bin/lsmod.kmod
++ update-alternatives --install /sbin/depmod depmod /sbin/depmod.kmod 70
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/depmod to /sbin/depmod.kmod
+%post(kmod-29-r0.cortexa57): waitpid(8258) rc 8258 status 0
+
+  Installing       : libkmod2-29-r0.cortexa57                             20/98 
+  Running scriptlet: libkmod2-29-r0.cortexa57                             20/98 
+%post(libkmod2-29-r0.cortexa57): scriptlet start
+%post(libkmod2-29-r0.cortexa57): execv(/bin/sh) pid 8467
++ set -e
++ [ x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs = x ]
+%post(libkmod2-29-r0.cortexa57): waitpid(8467) rc 8467 status 0
+
+  Installing       : eudev-3.2.10-r0.cortexa57                            21/98 
+  Running scriptlet: eudev-3.2.10-r0.cortexa57                            21/98 
+%post(eudev-3.2.10-r0.cortexa57): scriptlet start
+%post(eudev-3.2.10-r0.cortexa57): execv(/bin/sh) pid 8468
++ set -e
++ true
++ type update-rc.d
++ [ -n /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs ]
++ OPT=-r /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs
++ update-rc.d -r /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs udev start 04 S .
+ Adding system startup for /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc/init.d/udev.
+%post(eudev-3.2.10-r0.cortexa57): waitpid(8468) rc 8468 status 0
+
+  Installing       : libmount1-2.37.4-r0.cortexa57                        22/98 
+  Running scriptlet: libmount1-2.37.4-r0.cortexa57                        22/98 
+%post(libmount1-2.37.4-r0.cortexa57): scriptlet start
+%post(libmount1-2.37.4-r0.cortexa57): execv(/bin/sh) pid 8481
++ set -e
++ [ x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs = x ]
+%post(libmount1-2.37.4-r0.cortexa57): waitpid(8481) rc 8481 status 0
+
+  Installing       : libavahi-core7-0.8-r0.cortexa57                      23/98 
+  Running scriptlet: libavahi-core7-0.8-r0.cortexa57                      23/98 
+%post(libavahi-core7-0.8-r0.cortexa57): scriptlet start
+%post(libavahi-core7-0.8-r0.cortexa57): execv(/bin/sh) pid 8482
++ set -e
++ [ x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs = x ]
+%post(libavahi-core7-0.8-r0.cortexa57): waitpid(8482) rc 8482 status 0
+
+  Installing       : shadow-base-4.11.1-r0.cortexa57                      24/98 
+  Running scriptlet: shadow-base-4.11.1-r0.cortexa57                      24/98 
+%post(shadow-base-4.11.1-r0.cortexa57): scriptlet start
+%post(shadow-base-4.11.1-r0.cortexa57): execv(/bin/sh) pid 8483
++ set -e
++ update-alternatives --install /usr/bin/newgrp newgrp /usr/bin/newgrp.shadow 200
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/newgrp to /usr/bin/newgrp.shadow
++ update-alternatives --install /usr/bin/groups groups /usr/bin/groups.shadow 200
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/groups to /usr/bin/groups.shadow
++ update-alternatives --install /bin/login login /bin/login.shadow 200
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/login to /bin/login.shadow
++ update-alternatives --install /bin/su su /bin/su.shadow 200
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/su to /bin/su.shadow
+%post(shadow-base-4.11.1-r0.cortexa57): waitpid(8483) rc 8483 status 0
+
+  Installing       : util-linux-sulogin-2.37.4-r0.cortexa57               25/98 
+  Running scriptlet: util-linux-sulogin-2.37.4-r0.cortexa57               25/98 
+%post(util-linux-sulogin-2.37.4-r0.cortexa57): scriptlet start
+%post(util-linux-sulogin-2.37.4-r0.cortexa57): execv(/bin/sh) pid 8603
++ set -e
++ update-alternatives --install /sbin/sulogin sulogin /sbin/sulogin.util-linux 80
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/sulogin to /sbin/sulogin.util-linux
+%post(util-linux-sulogin-2.37.4-r0.cortexa57): waitpid(8603) rc 8603 status 0
+
+  Installing       : libxml2-2.9.14-r0.cortexa57                          26/98 
+  Running scriptlet: libxml2-2.9.14-r0.cortexa57                          26/98 
+%post(libxml2-2.9.14-r0.cortexa57): scriptlet start
+%post(libxml2-2.9.14-r0.cortexa57): execv(/bin/sh) pid 8634
++ set -e
++ [ x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs = x ]
+%post(libxml2-2.9.14-r0.cortexa57): waitpid(8634) rc 8634 status 0
+
+  Installing       : busybox-hwclock-1.35.0-r0.cortexa57                  27/98 
+  Running scriptlet: busybox-hwclock-1.35.0-r0.cortexa57                  27/98 
+%post(busybox-hwclock-1.35.0-r0.cortexa57): scriptlet start
+%post(busybox-hwclock-1.35.0-r0.cortexa57): execv(/bin/sh) pid 8635
++ set -e
++ true
++ type update-rc.d
++ [ -n /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs ]
++ OPT=-r /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs
++ update-rc.d -r /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs hwclock.sh defaults
+ Adding system startup for /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc/init.d/hwclock.sh.
+%post(busybox-hwclock-1.35.0-r0.cortexa57): waitpid(8635) rc 8635 status 0
+
+  Installing       : busybox-syslog-1.35.0-r0.cortexa57                   28/98 
+  Running scriptlet: busybox-syslog-1.35.0-r0.cortexa57                   28/98 
+%post(busybox-syslog-1.35.0-r0.cortexa57): scriptlet start
+%post(busybox-syslog-1.35.0-r0.cortexa57): execv(/bin/sh) pid 8718
++ set -e
++ update-alternatives --install /sbin/klogd klogd /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/klogd to /bin/busybox.nosuid
++ update-alternatives --install /sbin/syslogd syslogd /bin/busybox.nosuid 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/syslogd to /bin/busybox.nosuid
++ true
++ type update-rc.d
++ [ -n /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs ]
++ OPT=-r /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs
++ update-rc.d -r /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs syslog defaults
+ Adding system startup for /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc/init.d/syslog.
+%post(busybox-syslog-1.35.0-r0.cortexa57): waitpid(8718) rc 8718 status 0
+
+  Installing       : modutils-initscripts-1.0-r7.cortexa57                29/98 
+  Running scriptlet: modutils-initscripts-1.0-r7.cortexa57                29/98 
+%post(modutils-initscripts-1.0-r7.cortexa57): scriptlet start
+%post(modutils-initscripts-1.0-r7.cortexa57): execv(/bin/sh) pid 8909
++ set -e
++ type systemctl
++ true
++ type update-rc.d
++ [ -n /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs ]
++ OPT=-r /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs
++ update-rc.d -r /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs modutils.sh start 06 S .
+ Adding system startup for /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc/init.d/modutils.sh.
+%post(modutils-initscripts-1.0-r7.cortexa57): waitpid(8909) rc 8909 status 0
+
+  Installing       : dosfstools-4.2-r0.cortexa57                          30/98 
+  Running scriptlet: dosfstools-4.2-r0.cortexa57                          30/98 
+%post(dosfstools-4.2-r0.cortexa57): scriptlet start
+%post(dosfstools-4.2-r0.cortexa57): execv(/bin/sh) pid 8929
++ set -e
++ update-alternatives --install /usr/sbin/mkfs.vfat mkfs.vfat /usr/sbin/mkfs.vfat.dosfstools 100
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/sbin/mkfs.vfat to /usr/sbin/mkfs.vfat.dosfstools
+%post(dosfstools-4.2-r0.cortexa57): waitpid(8929) rc 8929 status 0
+
+  Installing       : packagegroup-base-vfat-1.0-r83.qemuarm64             31/98 
+  Installing       : init-system-helpers-service-1.62-r0.cortexa57        32/98 
+  Installing       : initscripts-1.0-r155.cortexa57                       33/98 
+  Running scriptlet: initscripts-1.0-r155.cortexa57                       33/98 
+%post(initscripts-1.0-r155.cortexa57): scriptlet start
+%post(initscripts-1.0-r155.cortexa57): execv(/bin/sh) pid 8972
++ set -e
++ type systemctl
++ [ -z /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs ]
+%post(initscripts-1.0-r155.cortexa57): waitpid(8972) rc 8972 status 0
+
+  Installing       : kernel-image-image-5.15.124-yocto-standard-5.15.12   34/98 
+  Running scriptlet: kernel-image-image-5.15.124-yocto-standard-5.15.12   34/98 
+%post(kernel-image-image-5.15.124-yocto-standard-5.15.124+git0+f484a7f175_f0e7afd594-r0.qemuarm64): scriptlet start
+%post(kernel-image-image-5.15.124-yocto-standard-5.15.124+git0+f484a7f175_f0e7afd594-r0.qemuarm64): execv(/bin/sh) pid 8973
++ set -e
++ set +e
++ [ -n /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs ]
++ ln -sf Image-5.15.124-yocto-standard /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/boot/Image
++ set -e
+%post(kernel-image-image-5.15.124-yocto-standard-5.15.124+git0+f484a7f175_f0e7afd594-r0.qemuarm64): waitpid(8973) rc 8973 status 0
+
+  Installing       : kernel-image-5.15.124-yocto-standard-5.15.124+git0   35/98 
+  Installing       : kernel-5.15.124-yocto-standard-5.15.124+git0+f484a   36/98 
+  Running scriptlet: kernel-5.15.124-yocto-standard-5.15.124+git0+f484a   36/98 
+%post(kernel-5.15.124-yocto-standard-5.15.124+git0+f484a7f175_f0e7afd594-r0.qemuarm64): scriptlet start
+%post(kernel-5.15.124-yocto-standard-5.15.124+git0+f484a7f175_f0e7afd594-r0.qemuarm64): execv(/bin/sh) pid 8975
++ set -e
++ [ ! -e /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/lib/modules/5.15.124-yocto-standard ]
++ [ -n /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs ]
++ depmodwrapper -a -b /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs 5.15.124-yocto-standard
+%post(kernel-5.15.124-yocto-standard-5.15.124+git0+f484a7f175_f0e7afd594-r0.qemuarm64): waitpid(8975) rc 8975 status 0
+
+  Installing       : kernel-module-nls-utf8-5.15.124-yocto-standard-5.1   37/98 
+  Running scriptlet: kernel-module-nls-utf8-5.15.124-yocto-standard-5.1   37/98 
+%post(kernel-module-nls-utf8-5.15.124-yocto-standard-5.15.124+git0+f484a7f175_f0e7afd594-r0.qemuarm64): scriptlet start
+%post(kernel-module-nls-utf8-5.15.124-yocto-standard-5.15.124+git0+f484a7f175_f0e7afd594-r0.qemuarm64): execv(/bin/sh) pid 8978
++ set -e
++ [ -z /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs ]
++ :
+%post(kernel-module-nls-utf8-5.15.124-yocto-standard-5.15.124+git0+f484a7f175_f0e7afd594-r0.qemuarm64): waitpid(8978) rc 8978 status 0
+
+  Installing       : libattr1-2.5.1-r0.cortexa57                          38/98 
+  Running scriptlet: libattr1-2.5.1-r0.cortexa57                          38/98 
+%post(libattr1-2.5.1-r0.cortexa57): scriptlet start
+%post(libattr1-2.5.1-r0.cortexa57): execv(/bin/sh) pid 8979
++ set -e
++ [ x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs = x ]
+%post(libattr1-2.5.1-r0.cortexa57): waitpid(8979) rc 8979 status 0
+
+  Installing       : libcap-2.66-r0.cortexa57                             39/98 
+  Running scriptlet: libcap-2.66-r0.cortexa57                             39/98 
+%post(libcap-2.66-r0.cortexa57): scriptlet start
+%post(libcap-2.66-r0.cortexa57): execv(/bin/sh) pid 8980
++ set -e
++ [ x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs = x ]
+%post(libcap-2.66-r0.cortexa57): waitpid(8980) rc 8980 status 0
+
+  Installing       : libdaemon0-0.14-r0.cortexa57                         40/98 
+  Running scriptlet: libdaemon0-0.14-r0.cortexa57                         40/98 
+%post(libdaemon0-0.14-r0.cortexa57): scriptlet start
+%post(libdaemon0-0.14-r0.cortexa57): execv(/bin/sh) pid 8981
++ set -e
++ [ x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs = x ]
+%post(libdaemon0-0.14-r0.cortexa57): waitpid(8981) rc 8981 status 0
+
+  Installing       : libffi8-3.4.4-r0.cortexa57                           41/98 
+  Running scriptlet: libffi8-3.4.4-r0.cortexa57                           41/98 
+%post(libffi8-3.4.4-r0.cortexa57): scriptlet start
+%post(libffi8-3.4.4-r0.cortexa57): execv(/bin/sh) pid 8982
++ set -e
++ [ x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs = x ]
+%post(libffi8-3.4.4-r0.cortexa57): waitpid(8982) rc 8982 status 0
+
+  Installing       : libpcre1-8.45-r0.cortexa57                           42/98 
+  Running scriptlet: libpcre1-8.45-r0.cortexa57                           42/98 
+%post(libpcre1-8.45-r0.cortexa57): scriptlet start
+%post(libpcre1-8.45-r0.cortexa57): execv(/bin/sh) pid 8983
++ set -e
++ [ x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs = x ]
+%post(libpcre1-8.45-r0.cortexa57): waitpid(8983) rc 8983 status 0
+
+  Installing       : libglib-2.0-0-1:2.72.3-r0.cortexa57                  43/98 
+  Running scriptlet: libglib-2.0-0-1:2.72.3-r0.cortexa57                  43/98 
+%post(libglib-2.0-0-1:2.72.3-r0.cortexa57): scriptlet start
+%post(libglib-2.0-0-1:2.72.3-r0.cortexa57): execv(/bin/sh) pid 8984
++ set -e
++ [ x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs != x ]
++ /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/intercept_scripts-979b2ad55322075c429ca4fcbbc744e9be90308595f4517121994539bda6e85a/postinst_intercept update_gio_module_cache libglib-2.0-0 mlprefix= binprefix= libdir=/usr/lib libexecdir=/usr/libexec base_libdir=/lib bindir=/usr/bin
++ [ x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs = x ]
+%post(libglib-2.0-0-1:2.72.3-r0.cortexa57): waitpid(8984) rc 8984 status 0
+
+  Installing       : shared-mime-info-2.1-r0.cortexa57                    44/98 
+  Installing       : libtirpc3-1.3.2-r0.cortexa57                         45/98 
+  Running scriptlet: libtirpc3-1.3.2-r0.cortexa57                         45/98 
+%post(libtirpc3-1.3.2-r0.cortexa57): scriptlet start
+%post(libtirpc3-1.3.2-r0.cortexa57): execv(/bin/sh) pid 9012
++ set -e
++ [ x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs = x ]
+%post(libtirpc3-1.3.2-r0.cortexa57): waitpid(9012) rc 9012 status 0
+
+  Installing       : libudev1-3.2.10-r0.cortexa57                         46/98 
+  Running scriptlet: libudev1-3.2.10-r0.cortexa57                         46/98 
+%post(libudev1-3.2.10-r0.cortexa57): scriptlet start
+%post(libudev1-3.2.10-r0.cortexa57): execv(/bin/sh) pid 9013
++ set -e
++ [ x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs = x ]
+%post(libudev1-3.2.10-r0.cortexa57): waitpid(9013) rc 9013 status 0
+
+  Installing       : libxau6-1:1.0.9-r0.cortexa57                         47/98 
+  Running scriptlet: libxau6-1:1.0.9-r0.cortexa57                         47/98 
+%post(libxau6-1:1.0.9-r0.cortexa57): scriptlet start
+%post(libxau6-1:1.0.9-r0.cortexa57): execv(/bin/sh) pid 9014
++ set -e
++ [ x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs = x ]
+%post(libxau6-1:1.0.9-r0.cortexa57): waitpid(9014) rc 9014 status 0
+
+  Installing       : libxdmcp6-1:1.1.3-r0.cortexa57                       48/98 
+  Running scriptlet: libxdmcp6-1:1.1.3-r0.cortexa57                       48/98 
+%post(libxdmcp6-1:1.1.3-r0.cortexa57): scriptlet start
+%post(libxdmcp6-1:1.1.3-r0.cortexa57): execv(/bin/sh) pid 9015
++ set -e
++ [ x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs = x ]
+%post(libxdmcp6-1:1.1.3-r0.cortexa57): waitpid(9015) rc 9015 status 0
+
+  Installing       : libxcb1-1.14-r0.cortexa57                            49/98 
+  Running scriptlet: libxcb1-1.14-r0.cortexa57                            49/98 
+%post(libxcb1-1.14-r0.cortexa57): scriptlet start
+%post(libxcb1-1.14-r0.cortexa57): execv(/bin/sh) pid 9016
++ set -e
++ [ x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs = x ]
+%post(libxcb1-1.14-r0.cortexa57): waitpid(9016) rc 9016 status 0
+
+  Installing       : libx11-6-1:1.7.3.1-r0.cortexa57                      50/98 
+  Running scriptlet: libx11-6-1:1.7.3.1-r0.cortexa57                      50/98 
+%post(libx11-6-1:1.7.3.1-r0.cortexa57): scriptlet start
+%post(libx11-6-1:1.7.3.1-r0.cortexa57): execv(/bin/sh) pid 9017
++ set -e
++ [ x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs = x ]
+%post(libx11-6-1:1.7.3.1-r0.cortexa57): waitpid(9017) rc 9017 status 0
+
+  Installing       : sysvinit-inittab-2.88dsf-r10.qemuarm64               51/98 
+  Running scriptlet: sysvinit-inittab-2.88dsf-r10.qemuarm64               51/98 
+%post(sysvinit-inittab-2.88dsf-r10.qemuarm64): scriptlet start
+%post(sysvinit-inittab-2.88dsf-r10.qemuarm64): execv(/bin/sh) pid 9018
++ set -e
++ [ 115200;ttyAMA0 115200;hvc0 =  ]
++ [ -n /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs ]
++ /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/intercept_scripts-979b2ad55322075c429ca4fcbbc744e9be90308595f4517121994539bda6e85a/postinst_intercept delay_to_first_boot sysvinit-inittab mlprefix=
++ exit 0
+%post(sysvinit-inittab-2.88dsf-r10.qemuarm64): waitpid(9018) rc 9018 status 0
+
+  Installing       : sysvinit-pidof-3.01-r0.cortexa57                     52/98 
+  Running scriptlet: sysvinit-pidof-3.01-r0.cortexa57                     52/98 
+%post(sysvinit-pidof-3.01-r0.cortexa57): scriptlet start
+%post(sysvinit-pidof-3.01-r0.cortexa57): execv(/bin/sh) pid 9025
++ set -e
++ update-alternatives --install /bin/pidof pidof /bin/pidof.sysvinit 200
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/pidof to /bin/pidof.sysvinit
+%post(sysvinit-pidof-3.01-r0.cortexa57): waitpid(9025) rc 9025 status 0
+
+  Installing       : sysvinit-3.01-r0.cortexa57                           53/98 
+  Running scriptlet: sysvinit-3.01-r0.cortexa57                           53/98 
+%post(sysvinit-3.01-r0.cortexa57): scriptlet start
+%post(sysvinit-3.01-r0.cortexa57): execv(/bin/sh) pid 9056
++ set -e
++ update-alternatives --install /sbin/init init /sbin/init.sysvinit 50
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/init to /sbin/init.sysvinit
++ update-alternatives --install /bin/mountpoint mountpoint /bin/mountpoint.sysvinit 20
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/bin/mountpoint to /bin/busybox.nosuid
++ update-alternatives --install /sbin/halt halt /sbin/halt.sysvinit 200
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/halt to /sbin/halt.sysvinit
++ update-alternatives --install /sbin/reboot reboot /sbin/reboot.sysvinit 200
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/reboot to /sbin/reboot.sysvinit
++ update-alternatives --install /sbin/runlevel runlevel /sbin/runlevel.sysvinit 200
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/runlevel to /sbin/runlevel.sysvinit
++ update-alternatives --install /sbin/shutdown shutdown /sbin/shutdown.sysvinit 200
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/shutdown to /sbin/shutdown.sysvinit
++ update-alternatives --install /sbin/poweroff poweroff /sbin/poweroff.sysvinit 200
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/poweroff to /sbin/poweroff.sysvinit
++ update-alternatives --install /usr/bin/last last /usr/bin/last.sysvinit 200
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/last to /usr/bin/last.sysvinit
++ update-alternatives --install /usr/bin/lastb lastb /usr/bin/lastb.sysvinit 200
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/lastb to /usr/bin/lastb.sysvinit
++ update-alternatives --install /usr/bin/mesg mesg /usr/bin/mesg.sysvinit 200
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/mesg to /usr/bin/mesg.sysvinit
++ update-alternatives --install /usr/bin/utmpdump utmpdump /usr/bin/utmpdump.sysvinit 200
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/utmpdump to /usr/bin/utmpdump.sysvinit
++ update-alternatives --install /usr/bin/wall wall /usr/bin/wall.sysvinit 200
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/wall to /usr/bin/wall.sysvinit
+%post(sysvinit-3.01-r0.cortexa57): waitpid(9056) rc 9056 status 0
+
+  Installing       : packagegroup-core-boot-1.0-r17.qemuarm64             54/98 
+  Installing       : packagegroup-distro-base-1.0-r83.qemuarm64           55/98 
+  Installing       : shadow-securetty-4.6-r3.qemuarm64                    56/98 
+  Installing       : shadow-4.11.1-r0.cortexa57                           57/98 
+  Running scriptlet: shadow-4.11.1-r0.cortexa57                           57/98 
+%post(shadow-4.11.1-r0.cortexa57): scriptlet start
+%post(shadow-4.11.1-r0.cortexa57): execv(/bin/sh) pid 9408
++ set -e
++ update-alternatives --install /usr/bin/passwd passwd /usr/bin/passwd.shadow 200
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/passwd to /usr/bin/passwd.shadow
++ update-alternatives --install /usr/bin/chfn chfn /usr/bin/chfn.shadow 200
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/chfn to /usr/bin/chfn.shadow
++ update-alternatives --install /usr/bin/chsh chsh /usr/bin/chsh.shadow 200
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/chsh to /usr/bin/chsh.shadow
++ update-alternatives --install /usr/sbin/chpasswd chpasswd /usr/sbin/chpasswd.shadow 200
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/sbin/chpasswd to /usr/sbin/chpasswd.shadow
++ update-alternatives --install /sbin/vipw vipw /sbin/vipw.shadow 200
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/vipw to /sbin/vipw.shadow
++ update-alternatives --install /sbin/vigr vigr /sbin/vigr.shadow 200
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/vigr to /sbin/vigr.shadow
++ update-alternatives --install /sbin/nologin nologin /sbin/nologin.shadow 200
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/sbin/nologin to /sbin/nologin.shadow
++ [ x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs != x ]
++ rootarg=--root /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs
++ pwconv --root /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs
+configuration error - unknown item 'SYSLOG_SU_ENAB' (notify administrator)
+configuration error - unknown item 'SYSLOG_SG_ENAB' (notify administrator)
++ grpconv --root /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs
+configuration error - unknown item 'SYSLOG_SU_ENAB' (notify administrator)
+configuration error - unknown item 'SYSLOG_SG_ENAB' (notify administrator)
++ [ x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs = x ]
+%post(shadow-4.11.1-r0.cortexa57): waitpid(9408) rc 9408 status 0
+
+  Running scriptlet: dbus-common-1.14.8-r0.cortexa57                      58/98 
+%prein(dbus-common-1.14.8-r0.cortexa57): scriptlet start
+%prein(dbus-common-1.14.8-r0.cortexa57): execv(/bin/sh) pid 9652
++ set -e
++ OPT=
++ SYSROOT=
++ test x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs != x
++ SYSROOT=/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs
++ OPT=--root /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs
++ [ ! -e /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc/login.defs -a -e /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc/login.defs.dpkg-new ]
++ export PSEUDO_PASSWD=/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs
++ test x = x
++ GROUPADD_PARAM=
++ USERADD_PARAM=--system --home /var/lib/dbus                              --no-create-home --shell /bin/false                              --user-group messagebus
++ GROUPMEMS_PARAM=
++ echo
++ tr -d [:space:]
++ test x != x
++ echo --system --home /var/lib/dbus --no-create-home --shell /bin/false --user-group messagebus
++ tr -d [:space:]
++ test x--system--home/var/lib/dbus--no-create-home--shell/bin/false--user-groupmessagebus != x
++ echo Running useradd commands...
+Running useradd commands...
++ echo --system --home /var/lib/dbus                              --no-create-home --shell /bin/false                              --user-group messagebus
++ cut -d ; -f 1
++ sed -e s#[ \t]*$##
++ opts=--system --home /var/lib/dbus                              --no-create-home --shell /bin/false                              --user-group messagebus
++ echo --system --home /var/lib/dbus                              --no-create-home --shell /bin/false                              --user-group messagebus
++ cut -d ; -f 2-
++ sed -e s#[ \t]*$##
++ remaining=--system --home /var/lib/dbus                              --no-create-home --shell /bin/false                              --user-group messagebus
++ test x--system --home /var/lib/dbus                              --no-create-home --shell /bin/false                              --user-group messagebus != x
++ perform_useradd /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs --root /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs --system --home /var/lib/dbus                              --no-create-home --shell /bin/false                              --user-group messagebus
++ local rootdir=/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs
++ local opts=--root /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs --system --home /var/lib/dbus                              --no-create-home --shell /bin/false                              --user-group messagebus
++ bbnote dbus: Performing useradd with [--root /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs --system --home /var/lib/dbus                              --no-create-home --shell /bin/false                              --user-group messagebus]
++ echo NOTE: dbus: Performing useradd with [--root /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs --system --home /var/lib/dbus                              --no-create-home --shell /bin/false                              --user-group messagebus]
+NOTE: dbus: Performing useradd with [--root /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs --system --home /var/lib/dbus                              --no-create-home --shell /bin/false                              --user-group messagebus]
++ echo --root /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs --system --home /var/lib/dbus                              --no-create-home --shell /bin/false                              --user-group messagebus
++ awk { print $NF }
++ local username=messagebus
++ grep ^messagebus: /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc/passwd
++ true
++ local user_exists=
++ test x = x
++ eval flock -x /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc -c " useradd $opts"
++ flock -x /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc -c  useradd --root /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs --system --home /var/lib/dbus                              --no-create-home --shell /bin/false                              --user-group messagebus
+configuration error - unknown item 'SYSLOG_SU_ENAB' (notify administrator)
+configuration error - unknown item 'SYSLOG_SG_ENAB' (notify administrator)
++ grep ^messagebus: /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc/passwd
++ user_exists=messagebus:x:999:999::/var/lib/dbus:/bin/false
++ test xmessagebus:x:999:999::/var/lib/dbus:/bin/false = x
++ test x--system --home /var/lib/dbus                              --no-create-home --shell /bin/false                              --user-group messagebus = x--system --home /var/lib/dbus                              --no-create-home --shell /bin/false                              --user-group messagebus
++ break
++ echo
++ tr -d [:space:]
++ test x != x
+%prein(dbus-common-1.14.8-r0.cortexa57): waitpid(9652) rc 9652 status 0
+
+  Installing       : dbus-common-1.14.8-r0.cortexa57                      58/98 
+  Installing       : dbus-tools-1.14.8-r0.cortexa57                       59/98 
+  Installing       : libdbus-1-3-1.14.8-r0.cortexa57                      60/98 
+  Running scriptlet: libdbus-1-3-1.14.8-r0.cortexa57                      60/98 
+%post(libdbus-1-3-1.14.8-r0.cortexa57): scriptlet start
+%post(libdbus-1-3-1.14.8-r0.cortexa57): execv(/bin/sh) pid 9680
++ set -e
++ [ x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs = x ]
+%post(libdbus-1-3-1.14.8-r0.cortexa57): waitpid(9680) rc 9680 status 0
+
+  Installing       : dbus-1-1.14.8-r0.cortexa57                           61/98 
+  Running scriptlet: dbus-1-1.14.8-r0.cortexa57                           61/98 
+%post(dbus-1-1.14.8-r0.cortexa57): scriptlet start
+%post(dbus-1-1.14.8-r0.cortexa57): execv(/bin/sh) pid 9681
++ set -e
++ false
++ [ -z /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs ]
++ true
++ type update-rc.d
++ [ -n /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs ]
++ OPT=-r /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs
++ update-rc.d -r /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs dbus-1 start 02 5 3 2 . stop 20 0 1 6 .
+ Adding system startup for /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc/init.d/dbus-1.
+%post(dbus-1-1.14.8-r0.cortexa57): waitpid(9681) rc 9681 status 0
+
+  Running scriptlet: avahi-daemon-0.8-r0.cortexa57                        62/98 
+%prein(avahi-daemon-0.8-r0.cortexa57): scriptlet start
+%prein(avahi-daemon-0.8-r0.cortexa57): execv(/bin/sh) pid 9741
++ set -e
++ OPT=
++ SYSROOT=
++ test x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs != x
++ SYSROOT=/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs
++ OPT=--root /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs
++ [ ! -e /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc/login.defs -a -e /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc/login.defs.dpkg-new ]
++ export PSEUDO_PASSWD=/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs
++ test x = x
++ GROUPADD_PARAM=
++ USERADD_PARAM=--system --home /run/avahi-daemon                               --no-create-home --shell /bin/false                               --user-group avahi
++ GROUPMEMS_PARAM=
++ echo
++ tr -d [:space:]
++ test x != x
++ echo --system --home /run/avahi-daemon --no-create-home --shell /bin/false --user-group avahi
++ tr -d [:space:]
++ test x--system--home/run/avahi-daemon--no-create-home--shell/bin/false--user-groupavahi != x
++ echo Running useradd commands...
+Running useradd commands...
++ echo --system --home /run/avahi-daemon                               --no-create-home --shell /bin/false                               --user-group avahi
++ cut -d ; -f 1
++ sed -e s#[ \t]*$##
++ opts=--system --home /run/avahi-daemon                               --no-create-home --shell /bin/false                               --user-group avahi
++ echo --system --home /run/avahi-daemon                               --no-create-home --shell /bin/false                               --user-group avahi
++ cut -d ; -f 2-
++ sed -e s#[ \t]*$##
++ remaining=--system --home /run/avahi-daemon                               --no-create-home --shell /bin/false                               --user-group avahi
++ test x--system --home /run/avahi-daemon                               --no-create-home --shell /bin/false                               --user-group avahi != x
++ perform_useradd /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs --root /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs --system --home /run/avahi-daemon                               --no-create-home --shell /bin/false                               --user-group avahi
++ local rootdir=/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs
++ local opts=--root /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs --system --home /run/avahi-daemon                               --no-create-home --shell /bin/false                               --user-group avahi
++ bbnote avahi: Performing useradd with [--root /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs --system --home /run/avahi-daemon                               --no-create-home --shell /bin/false                               --user-group avahi]
++ echo NOTE: avahi: Performing useradd with [--root /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs --system --home /run/avahi-daemon                               --no-create-home --shell /bin/false                               --user-group avahi]
+NOTE: avahi: Performing useradd with [--root /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs --system --home /run/avahi-daemon                               --no-create-home --shell /bin/false                               --user-group avahi]
++ echo --root /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs --system --home /run/avahi-daemon                               --no-create-home --shell /bin/false                               --user-group avahi
++ awk { print $NF }
++ local username=avahi
++ grep ^avahi: /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc/passwd
++ true
++ local user_exists=
++ test x = x
++ eval flock -x /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc -c " useradd $opts"
++ flock -x /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc -c  useradd --root /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs --system --home /run/avahi-daemon                               --no-create-home --shell /bin/false                               --user-group avahi
+configuration error - unknown item 'SYSLOG_SU_ENAB' (notify administrator)
+configuration error - unknown item 'SYSLOG_SG_ENAB' (notify administrator)
++ grep ^avahi: /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc/passwd
++ user_exists=avahi:x:998:998::/run/avahi-daemon:/bin/false
++ test xavahi:x:998:998::/run/avahi-daemon:/bin/false = x
++ test x--system --home /run/avahi-daemon                               --no-create-home --shell /bin/false                               --user-group avahi = x--system --home /run/avahi-daemon                               --no-create-home --shell /bin/false                               --user-group avahi
++ break
++ echo
++ tr -d [:space:]
++ test x != x
+%prein(avahi-daemon-0.8-r0.cortexa57): waitpid(9741) rc 9741 status 0
+
+  Installing       : avahi-daemon-0.8-r0.cortexa57                        62/98 
+  Running scriptlet: avahi-daemon-0.8-r0.cortexa57                        62/98 
+%post(avahi-daemon-0.8-r0.cortexa57): scriptlet start
+%post(avahi-daemon-0.8-r0.cortexa57): execv(/bin/sh) pid 9769
++ set -e
++ [ -z /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs ]
++ true
++ type update-rc.d
++ [ -n /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs ]
++ OPT=-r /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs
++ update-rc.d -r /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs avahi-daemon defaults 21 19
+ Adding system startup for /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc/init.d/avahi-daemon.
+%post(avahi-daemon-0.8-r0.cortexa57): waitpid(9769) rc 9769 status 0
+
+  Installing       : libnss-mdns-0.15.1-r0.cortexa57                      63/98 
+  Running scriptlet: libnss-mdns-0.15.1-r0.cortexa57                      63/98 
+%post(libnss-mdns-0.15.1-r0.cortexa57): scriptlet start
+%post(libnss-mdns-0.15.1-r0.cortexa57): execv(/bin/sh) pid 9836
++ set -e
++ sed 
+		/^hosts:/ !b
+		/\<mdns\(4\|6\)\?\(_minimal\)\?\>/ b
+		s/\([[:blank:]]\+\)dns\>/\1mdns4_minimal [NOTFOUND=return] dns/g
+		 -i /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc/nsswitch.conf
++ [ x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs = x ]
+%post(libnss-mdns-0.15.1-r0.cortexa57): waitpid(9836) rc 9836 status 0
+
+  Installing       : packagegroup-base-zeroconf-1.0-r83.qemuarm64         64/98 
+  Running scriptlet: rpcbind-1.2.6-r0.cortexa57                           65/98 
+%prein(rpcbind-1.2.6-r0.cortexa57): scriptlet start
+%prein(rpcbind-1.2.6-r0.cortexa57): execv(/bin/sh) pid 9838
++ set -e
++ OPT=
++ SYSROOT=
++ test x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs != x
++ SYSROOT=/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs
++ OPT=--root /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs
++ [ ! -e /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc/login.defs -a -e /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc/login.defs.dpkg-new ]
++ export PSEUDO_PASSWD=/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs
++ test x = x
++ GROUPADD_PARAM=
++ USERADD_PARAM=--system --no-create-home --home-dir /                        --shell /bin/false --user-group rpc
++ GROUPMEMS_PARAM=
++ echo
++ tr -d [:space:]
++ test x != x
++ echo --system --no-create-home --home-dir / --shell /bin/false --user-group rpc
++ tr -d [:space:]
++ test x--system--no-create-home--home-dir/--shell/bin/false--user-grouprpc != x
++ echo Running useradd commands...
+Running useradd commands...
++ echo --system --no-create-home --home-dir /                        --shell /bin/false --user-group rpc
++ cut -d ; -f 1
++ sed -e s#[ \t]*$##
++ opts=--system --no-create-home --home-dir /                        --shell /bin/false --user-group rpc
++ echo --system --no-create-home --home-dir /                        --shell /bin/false --user-group rpc
++ cut -d ; -f 2-
++ sed -e s#[ \t]*$##
++ remaining=--system --no-create-home --home-dir /                        --shell /bin/false --user-group rpc
++ test x--system --no-create-home --home-dir /                        --shell /bin/false --user-group rpc != x
++ perform_useradd /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs --root /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs --system --no-create-home --home-dir /                        --shell /bin/false --user-group rpc
++ local rootdir=/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs
++ local opts=--root /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs --system --no-create-home --home-dir /                        --shell /bin/false --user-group rpc
++ bbnote rpcbind: Performing useradd with [--root /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs --system --no-create-home --home-dir /                        --shell /bin/false --user-group rpc]
++ echo NOTE: rpcbind: Performing useradd with [--root /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs --system --no-create-home --home-dir /                        --shell /bin/false --user-group rpc]
+NOTE: rpcbind: Performing useradd with [--root /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs --system --no-create-home --home-dir /                        --shell /bin/false --user-group rpc]
++ echo --root /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs --system --no-create-home --home-dir /                        --shell /bin/false --user-group rpc
++ awk { print $NF }
++ local username=rpc
++ grep ^rpc: /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc/passwd
++ true
++ local user_exists=
++ test x = x
++ eval flock -x /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc -c " useradd $opts"
++ flock -x /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc -c  useradd --root /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs --system --no-create-home --home-dir /                        --shell /bin/false --user-group rpc
+configuration error - unknown item 'SYSLOG_SU_ENAB' (notify administrator)
+configuration error - unknown item 'SYSLOG_SG_ENAB' (notify administrator)
++ grep ^rpc: /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc/passwd
++ user_exists=rpc:x:997:997::/:/bin/false
++ test xrpc:x:997:997::/:/bin/false = x
++ test x--system --no-create-home --home-dir /                        --shell /bin/false --user-group rpc = x--system --no-create-home --home-dir /                        --shell /bin/false --user-group rpc
++ break
++ echo
++ tr -d [:space:]
++ test x != x
+%prein(rpcbind-1.2.6-r0.cortexa57): waitpid(9838) rc 9838 status 0
+
+  Installing       : rpcbind-1.2.6-r0.cortexa57                           65/98 
+  Running scriptlet: rpcbind-1.2.6-r0.cortexa57                           65/98 
+%post(rpcbind-1.2.6-r0.cortexa57): scriptlet start
+%post(rpcbind-1.2.6-r0.cortexa57): execv(/bin/sh) pid 9866
++ set -e
++ update-alternatives --install /usr/bin/rpcinfo rpcinfo /usr/bin/rpcinfo.rpcbind 10
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/rpcinfo to /usr/bin/rpcinfo.rpcbind
++ true
++ type update-rc.d
++ [ -n /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs ]
++ OPT=-r /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs
++ update-rc.d -r /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs rpcbind start 12 2 3 4 5 . stop 60 0 1 6 .
+ Adding system startup for /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc/init.d/rpcbind.
+%post(rpcbind-1.2.6-r0.cortexa57): waitpid(9866) rc 9866 status 0
+
+  Installing       : packagegroup-base-nfs-1.0-r83.qemuarm64              66/98 
+  Installing       : packagegroup-machine-base-1.0-r83.qemuarm64          67/98 
+  Installing       : packagegroup-base-usbgadget-1.0-r83.qemuarm64        68/98 
+  Installing       : packagegroup-base-ipv6-1.0-r83.qemuarm64             69/98 
+  Installing       : openssl-conf-3.0.11-r0.cortexa57                     70/98 
+  Installing       : openssl-ossl-module-legacy-3.0.11-r0.cortexa57       71/98 
+  Installing       : libcrypto3-3.0.11-r0.cortexa57                       72/98 
+  Running scriptlet: libcrypto3-3.0.11-r0.cortexa57                       72/98 
+%post(libcrypto3-3.0.11-r0.cortexa57): scriptlet start
+%post(libcrypto3-3.0.11-r0.cortexa57): execv(/bin/sh) pid 9964
++ set -e
++ [ x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs = x ]
+%post(libcrypto3-3.0.11-r0.cortexa57): waitpid(9964) rc 9964 status 0
+
+  Installing       : openssh-keygen-8.9p1-r0.cortexa57                    73/98 
+  Running scriptlet: openssh-sshd-8.9p1-r0.cortexa57                      74/98 
+%prein(openssh-sshd-8.9p1-r0.cortexa57): scriptlet start
+%prein(openssh-sshd-8.9p1-r0.cortexa57): execv(/bin/sh) pid 9965
++ set -e
++ OPT=
++ SYSROOT=
++ test x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs != x
++ SYSROOT=/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs
++ OPT=--root /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs
++ [ ! -e /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc/login.defs -a -e /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc/login.defs.dpkg-new ]
++ export PSEUDO_PASSWD=/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs
++ test x = x
++ GROUPADD_PARAM=
++ USERADD_PARAM=--system --no-create-home --home-dir /var/run/sshd --shell /bin/false --user-group sshd
++ GROUPMEMS_PARAM=
++ echo
++ tr -d [:space:]
++ test x != x
++ echo --system --no-create-home --home-dir /var/run/sshd --shell /bin/false --user-group sshd
++ tr -d [:space:]
++ test x--system--no-create-home--home-dir/var/run/sshd--shell/bin/false--user-groupsshd != x
++ echo Running useradd commands...
+Running useradd commands...
++ echo --system --no-create-home --home-dir /var/run/sshd --shell /bin/false --user-group sshd
++ cut -d ; -f 1
++ sed -e s#[ \t]*$##
++ opts=--system --no-create-home --home-dir /var/run/sshd --shell /bin/false --user-group sshd
++ echo --system --no-create-home --home-dir /var/run/sshd --shell /bin/false --user-group sshd
++ cut -d ; -f 2-
++ sed -e s#[ \t]*$##
++ remaining=--system --no-create-home --home-dir /var/run/sshd --shell /bin/false --user-group sshd
++ test x--system --no-create-home --home-dir /var/run/sshd --shell /bin/false --user-group sshd != x
++ perform_useradd /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs --root /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs --system --no-create-home --home-dir /var/run/sshd --shell /bin/false --user-group sshd
++ local rootdir=/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs
++ local opts=--root /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs --system --no-create-home --home-dir /var/run/sshd --shell /bin/false --user-group sshd
++ bbnote openssh: Performing useradd with [--root /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs --system --no-create-home --home-dir /var/run/sshd --shell /bin/false --user-group sshd]
++ echo NOTE: openssh: Performing useradd with [--root /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs --system --no-create-home --home-dir /var/run/sshd --shell /bin/false --user-group sshd]
+NOTE: openssh: Performing useradd with [--root /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs --system --no-create-home --home-dir /var/run/sshd --shell /bin/false --user-group sshd]
++ echo --root /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs --system --no-create-home --home-dir /var/run/sshd --shell /bin/false --user-group sshd
++ awk { print $NF }
++ local username=sshd
++ grep ^sshd: /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc/passwd
++ true
++ local user_exists=
++ test x = x
++ eval flock -x /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc -c " useradd $opts"
++ flock -x /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc -c  useradd --root /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs --system --no-create-home --home-dir /var/run/sshd --shell /bin/false --user-group sshd
+configuration error - unknown item 'SYSLOG_SU_ENAB' (notify administrator)
+configuration error - unknown item 'SYSLOG_SG_ENAB' (notify administrator)
++ grep ^sshd: /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc/passwd
++ user_exists=sshd:x:996:996::/var/run/sshd:/bin/false
++ test xsshd:x:996:996::/var/run/sshd:/bin/false = x
++ test x--system --no-create-home --home-dir /var/run/sshd --shell /bin/false --user-group sshd = x--system --no-create-home --home-dir /var/run/sshd --shell /bin/false --user-group sshd
++ break
++ echo
++ tr -d [:space:]
++ test x != x
+%prein(openssh-sshd-8.9p1-r0.cortexa57): waitpid(9965) rc 9965 status 0
+
+  Installing       : openssh-sshd-8.9p1-r0.cortexa57                      74/98 
+  Running scriptlet: openssh-sshd-8.9p1-r0.cortexa57                      74/98 
+%post(openssh-sshd-8.9p1-r0.cortexa57): scriptlet start
+%post(openssh-sshd-8.9p1-r0.cortexa57): execv(/bin/sh) pid 9993
++ set -e
++ true
++ type update-rc.d
++ [ -n /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs ]
++ OPT=-r /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs
++ update-rc.d -r /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs sshd defaults 9
+ Adding system startup for /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc/init.d/sshd.
+%post(openssh-sshd-8.9p1-r0.cortexa57): waitpid(9993) rc 9993 status 0
+
+  Installing       : openssh-scp-8.9p1-r0.cortexa57                       75/98 
+  Running scriptlet: openssh-scp-8.9p1-r0.cortexa57                       75/98 
+%post(openssh-scp-8.9p1-r0.cortexa57): scriptlet start
+%post(openssh-scp-8.9p1-r0.cortexa57): execv(/bin/sh) pid 10068
++ set -e
++ update-alternatives --install /usr/bin/scp scp /usr/bin/scp.openssh 90
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/scp to /usr/bin/scp.openssh
+%post(openssh-scp-8.9p1-r0.cortexa57): waitpid(10068) rc 10068 status 0
+
+  Installing       : openssh-sftp-server-8.9p1-r0.cortexa57               76/98 
+  Installing       : openssh-ssh-8.9p1-r0.cortexa57                       77/98 
+  Running scriptlet: openssh-ssh-8.9p1-r0.cortexa57                       77/98 
+%post(openssh-ssh-8.9p1-r0.cortexa57): scriptlet start
+%post(openssh-ssh-8.9p1-r0.cortexa57): execv(/bin/sh) pid 10099
++ set -e
++ update-alternatives --install /usr/bin/ssh ssh /usr/bin/ssh.openssh 90
+update-alternatives: Linking /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/usr/bin/ssh to /usr/bin/ssh.openssh
+%post(openssh-ssh-8.9p1-r0.cortexa57): waitpid(10099) rc 10099 status 0
+
+  Installing       : ncurses-terminfo-base-6.3+20220423-r0.cortexa57      78/98 
+  Installing       : libtinfo5-6.3+20220423-r0.cortexa57                  79/98 
+  Running scriptlet: libtinfo5-6.3+20220423-r0.cortexa57                  79/98 
+%post(libtinfo5-6.3+20220423-r0.cortexa57): scriptlet start
+%post(libtinfo5-6.3+20220423-r0.cortexa57): execv(/bin/sh) pid 10132
++ set -e
++ [ x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs = x ]
+%post(libtinfo5-6.3+20220423-r0.cortexa57): waitpid(10132) rc 10132 status 0
+
+  Installing       : libreadline8-8.1.2-r0.cortexa57                      80/98 
+  Running scriptlet: libreadline8-8.1.2-r0.cortexa57                      80/98 
+%post(libreadline8-8.1.2-r0.cortexa57): scriptlet start
+%post(libreadline8-8.1.2-r0.cortexa57): execv(/bin/sh) pid 10137
++ set -e
++ [ x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs = x ]
+%post(libreadline8-8.1.2-r0.cortexa57): waitpid(10137) rc 10137 status 0
+
+  Installing       : bluez5-5.65-r0.cortexa57                             81/98 
+  Running scriptlet: bluez5-5.65-r0.cortexa57                             81/98 
+%post(bluez5-5.65-r0.cortexa57): scriptlet start
+%post(bluez5-5.65-r0.cortexa57): execv(/bin/sh) pid 10139
++ set -e
++ true
++ type update-rc.d
++ [ -n /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs ]
++ OPT=-r /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs
++ update-rc.d -r /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs bluetooth defaults
+ Adding system startup for /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc/init.d/bluetooth.
++ [ x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs = x ]
+%post(bluez5-5.65-r0.cortexa57): waitpid(10139) rc 10139 status 0
+
+  Installing       : packagegroup-base-bluetooth-1.0-r83.qemuarm64        82/98 
+  Installing       : glibc-binary-localedata-en-us-2.35-r0.cortexa57      83/98 
+  Installing       : glibc-binary-localedata-en-gb-2.35-r0.cortexa57      84/98 
+  Installing       : alsa-ucm-conf-1.2.6.3-r0.noarch                      85/98 
+  Installing       : alsa-conf-1.2.6.1-r0.cortexa57                       86/98 
+  Installing       : libasound2-1.2.6.1-r0.cortexa57                      87/98 
+  Running scriptlet: libasound2-1.2.6.1-r0.cortexa57                      87/98 
+%post(libasound2-1.2.6.1-r0.cortexa57): scriptlet start
+%post(libasound2-1.2.6.1-r0.cortexa57): execv(/bin/sh) pid 10310
++ set -e
++ [ x/home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs = x ]
+%post(libasound2-1.2.6.1-r0.cortexa57): waitpid(10310) rc 10310 status 0
+
+  Installing       : alsa-utils-alsactl-1.2.6-r0.cortexa57                88/98 
+  Installing       : alsa-state-0.2.0-r5.cortexa57                        89/98 
+  Running scriptlet: alsa-state-0.2.0-r5.cortexa57                        89/98 
+%post(alsa-state-0.2.0-r5.cortexa57): scriptlet start
+%post(alsa-state-0.2.0-r5.cortexa57): execv(/bin/sh) pid 10311
++ set -e
++ test -z /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs
++ true
++ type update-rc.d
++ [ -n /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs ]
++ OPT=-r /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs
++ update-rc.d -r /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs alsa-state start 39 S . stop 31 0 6 .
+ Adding system startup for /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc/init.d/alsa-state.
+%post(alsa-state-0.2.0-r5.cortexa57): waitpid(10311) rc 10311 status 0
+
+  Installing       : alsa-utils-amixer-1.2.6-r0.cortexa57                 90/98 
+  Installing       : packagegroup-base-alsa-1.0-r83.qemuarm64             91/98 
+  Installing       : packagegroup-base-1.0-r83.qemuarm64                  92/98 
+  Installing       : packagegroup-base-extended-1.0-r83.qemuarm64         93/98 
+  Installing       : locale-base-en-gb-2.35-r0.cortexa57                  94/98 
+  Installing       : locale-base-en-us-2.35-r0.cortexa57                  95/98 
+  Installing       : openssh-8.9p1-r0.cortexa57                           96/98 
+  Installing       : aesd-assignments-1.0+git0+1693f02e5a-r0.cortexa57    97/98 
+  Running scriptlet: aesd-assignments-1.0+git0+1693f02e5a-r0.cortexa57    97/98 
+%post(aesd-assignments-1.0+git0+1693f02e5a-r0.cortexa57): scriptlet start
+%post(aesd-assignments-1.0+git0+1693f02e5a-r0.cortexa57): execv(/bin/sh) pid 10348
++ set -e
++ true
++ type update-rc.d
++ [ -n /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs ]
++ OPT=-r /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs
++ update-rc.d -r /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs defaults
+usage: update-rc.d [-n] [-f] [-r <root>] <basename> remove
+       update-rc.d [-n] [-r <root>] [-s] <basename> defaults [NN | sNN kNN]
+       update-rc.d [-n] [-r <root>] [-s] <basename> start|stop NN runlvl [runlvl] [...] .
+       update-rc.d [-n] [-r <root>] [-s] <basename> enable|disable [S|2|3|4|5]
+		-n: not really
+		-f: force
+		-v: verbose
+		-r: alternate root path (default is /)
+		-s: invoke start methods if appropriate to current runlevel
+%post(aesd-assignments-1.0+git0+1693f02e5a-r0.cortexa57): waitpid(10348) rc 10348 status 100
+warning: %post(aesd-assignments-1.0+git0+1693f02e5a-r0.cortexa57) scriptlet failed, exit status 1
+
+Error in POSTIN scriptlet in rpm package aesd-assignments
+  Installing       : run-postinsts-1.0-r10.noarch                         98/98 
+  Running scriptlet: run-postinsts-1.0-r10.noarch                         98/98 
+%post(run-postinsts-1.0-r10.noarch): scriptlet start
+%post(run-postinsts-1.0-r10.noarch): execv(/bin/sh) pid 10351
++ set -e
++ true
++ type update-rc.d
++ [ -n /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs ]
++ OPT=-r /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs
++ update-rc.d -r /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs run-postinsts start 99 S .
+ Adding system startup for /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/rootfs/etc/init.d/run-postinsts.
+%post(run-postinsts-1.0-r10.noarch): waitpid(10351) rc 10351 status 0
+
+  Verifying        : aesd-assignments-1.0+git0+1693f02e5a-r0.cortexa57     1/98 
+  Verifying        : alsa-conf-1.2.6.1-r0.cortexa57                        2/98 
+  Verifying        : alsa-state-0.2.0-r5.cortexa57                         3/98 
+  Verifying        : alsa-states-0.2.0-r5.cortexa57                        4/98 
+  Verifying        : alsa-ucm-conf-1.2.6.3-r0.noarch                       5/98 
+  Verifying        : alsa-utils-alsactl-1.2.6-r0.cortexa57                 6/98 
+  Verifying        : alsa-utils-amixer-1.2.6-r0.cortexa57                  7/98 
+  Verifying        : avahi-daemon-0.8-r0.cortexa57                         8/98 
+  Verifying        : base-files-3.0.14-r89.qemuarm64                       9/98 
+  Verifying        : base-passwd-3.5.29-r0.cortexa57                      10/98 
+  Verifying        : bluez5-5.65-r0.cortexa57                             11/98 
+  Verifying        : busybox-1.35.0-r0.cortexa57                          12/98 
+  Verifying        : busybox-hwclock-1.35.0-r0.cortexa57                  13/98 
+  Verifying        : busybox-syslog-1.35.0-r0.cortexa57                   14/98 
+  Verifying        : busybox-udhcpc-1.35.0-r0.cortexa57                   15/98 
+  Verifying        : dbus-1-1.14.8-r0.cortexa57                           16/98 
+  Verifying        : dbus-common-1.14.8-r0.cortexa57                      17/98 
+  Verifying        : dbus-tools-1.14.8-r0.cortexa57                       18/98 
+  Verifying        : dosfstools-4.2-r0.cortexa57                          19/98 
+  Verifying        : eudev-3.2.10-r0.cortexa57                            20/98 
+  Verifying        : glibc-binary-localedata-en-gb-2.35-r0.cortexa57      21/98 
+  Verifying        : glibc-binary-localedata-en-us-2.35-r0.cortexa57      22/98 
+  Verifying        : init-ifupdown-1.0-r7.qemuarm64                       23/98 
+  Verifying        : init-system-helpers-service-1.62-r0.cortexa57        24/98 
+  Verifying        : initscripts-1.0-r155.cortexa57                       25/98 
+  Verifying        : initscripts-functions-1.0-r155.cortexa57             26/98 
+  Verifying        : kernel-5.15.124-yocto-standard-5.15.124+git0+f484a   27/98 
+  Verifying        : kernel-image-5.15.124-yocto-standard-5.15.124+git0   28/98 
+  Verifying        : kernel-image-image-5.15.124-yocto-standard-5.15.12   29/98 
+  Verifying        : kernel-module-nls-utf8-5.15.124-yocto-standard-5.1   30/98 
+  Verifying        : kmod-29-r0.cortexa57                                 31/98 
+  Verifying        : ldconfig-2.35-r0.cortexa57                           32/98 
+  Verifying        : libasound2-1.2.6.1-r0.cortexa57                      33/98 
+  Verifying        : libattr1-2.5.1-r0.cortexa57                          34/98 
+  Verifying        : libavahi-common3-0.8-r0.cortexa57                    35/98 
+  Verifying        : libavahi-core7-0.8-r0.cortexa57                      36/98 
+  Verifying        : libblkid1-2.37.4-r0.cortexa57                        37/98 
+  Verifying        : libc6-2.35-r0.cortexa57                              38/98 
+  Verifying        : libcap-2.66-r0.cortexa57                             39/98 
+  Verifying        : libcrypt2-4.4.33-r0.cortexa57                        40/98 
+  Verifying        : libcrypto3-3.0.11-r0.cortexa57                       41/98 
+  Verifying        : libdaemon0-0.14-r0.cortexa57                         42/98 
+  Verifying        : libdbus-1-3-1.14.8-r0.cortexa57                      43/98 
+  Verifying        : libexpat1-2.5.0-r0.cortexa57                         44/98 
+  Verifying        : libffi8-3.4.4-r0.cortexa57                           45/98 
+  Verifying        : libglib-2.0-0-1:2.72.3-r0.cortexa57                  46/98 
+  Verifying        : libkmod2-29-r0.cortexa57                             47/98 
+  Verifying        : liblzma5-5.2.6-r0.cortexa57                          48/98 
+  Verifying        : libmount1-2.37.4-r0.cortexa57                        49/98 
+  Verifying        : libnss-mdns-0.15.1-r0.cortexa57                      50/98 
+  Verifying        : libpcre1-8.45-r0.cortexa57                           51/98 
+  Verifying        : libreadline8-8.1.2-r0.cortexa57                      52/98 
+  Verifying        : libtinfo5-6.3+20220423-r0.cortexa57                  53/98 
+  Verifying        : libtirpc3-1.3.2-r0.cortexa57                         54/98 
+  Verifying        : libudev1-3.2.10-r0.cortexa57                         55/98 
+  Verifying        : libx11-6-1:1.7.3.1-r0.cortexa57                      56/98 
+  Verifying        : libxau6-1:1.0.9-r0.cortexa57                         57/98 
+  Verifying        : libxcb1-1.14-r0.cortexa57                            58/98 
+  Verifying        : libxdmcp6-1:1.1.3-r0.cortexa57                       59/98 
+  Verifying        : libxml2-2.9.14-r0.cortexa57                          60/98 
+  Verifying        : libz1-1.2.11-r0.cortexa57                            61/98 
+  Verifying        : locale-base-en-gb-2.35-r0.cortexa57                  62/98 
+  Verifying        : locale-base-en-us-2.35-r0.cortexa57                  63/98 
+  Verifying        : modutils-initscripts-1.0-r7.cortexa57                64/98 
+  Verifying        : ncurses-terminfo-base-6.3+20220423-r0.cortexa57      65/98 
+  Verifying        : netbase-1:6.3-r0.noarch                              66/98 
+  Verifying        : openssh-8.9p1-r0.cortexa57                           67/98 
+  Verifying        : openssh-keygen-8.9p1-r0.cortexa57                    68/98 
+  Verifying        : openssh-scp-8.9p1-r0.cortexa57                       69/98 
+  Verifying        : openssh-sftp-server-8.9p1-r0.cortexa57               70/98 
+  Verifying        : openssh-ssh-8.9p1-r0.cortexa57                       71/98 
+  Verifying        : openssh-sshd-8.9p1-r0.cortexa57                      72/98 
+  Verifying        : openssl-conf-3.0.11-r0.cortexa57                     73/98 
+  Verifying        : openssl-ossl-module-legacy-3.0.11-r0.cortexa57       74/98 
+  Verifying        : packagegroup-base-1.0-r83.qemuarm64                  75/98 
+  Verifying        : packagegroup-base-alsa-1.0-r83.qemuarm64             76/98 
+  Verifying        : packagegroup-base-bluetooth-1.0-r83.qemuarm64        77/98 
+  Verifying        : packagegroup-base-extended-1.0-r83.qemuarm64         78/98 
+  Verifying        : packagegroup-base-ipv6-1.0-r83.qemuarm64             79/98 
+  Verifying        : packagegroup-base-nfs-1.0-r83.qemuarm64              80/98 
+  Verifying        : packagegroup-base-usbgadget-1.0-r83.qemuarm64        81/98 
+  Verifying        : packagegroup-base-vfat-1.0-r83.qemuarm64             82/98 
+  Verifying        : packagegroup-base-zeroconf-1.0-r83.qemuarm64         83/98 
+  Verifying        : packagegroup-core-boot-1.0-r17.qemuarm64             84/98 
+  Verifying        : packagegroup-distro-base-1.0-r83.qemuarm64           85/98 
+  Verifying        : packagegroup-machine-base-1.0-r83.qemuarm64          86/98 
+  Verifying        : rpcbind-1.2.6-r0.cortexa57                           87/98 
+  Verifying        : run-postinsts-1.0-r10.noarch                         88/98 
+  Verifying        : shadow-4.11.1-r0.cortexa57                           89/98 
+  Verifying        : shadow-base-4.11.1-r0.cortexa57                      90/98 
+  Verifying        : shadow-securetty-4.6-r3.qemuarm64                    91/98 
+  Verifying        : shared-mime-info-2.1-r0.cortexa57                    92/98 
+  Verifying        : sysvinit-3.01-r0.cortexa57                           93/98 
+  Verifying        : sysvinit-inittab-2.88dsf-r10.qemuarm64               94/98 
+  Verifying        : sysvinit-pidof-3.01-r0.cortexa57                     95/98 
+  Verifying        : update-alternatives-opkg-0.5.0-r0.cortexa57          96/98 
+  Verifying        : update-rc.d-0.8-r0.noarch                            97/98 
+  Verifying        : util-linux-sulogin-2.37.4-r0.cortexa57               98/98 
+Installed: aesd-assignments-1.0+git0+1693f02e5a-r0.cortexa57
+Installed: alsa-conf-1.2.6.1-r0.cortexa57
+Installed: alsa-state-0.2.0-r5.cortexa57
+Installed: alsa-states-0.2.0-r5.cortexa57
+Installed: alsa-ucm-conf-1.2.6.3-r0.noarch
+Installed: alsa-utils-alsactl-1.2.6-r0.cortexa57
+Installed: alsa-utils-amixer-1.2.6-r0.cortexa57
+Installed: avahi-daemon-0.8-r0.cortexa57
+Installed: base-files-3.0.14-r89.qemuarm64
+Installed: base-passwd-3.5.29-r0.cortexa57
+Installed: bluez5-5.65-r0.cortexa57
+Installed: busybox-1.35.0-r0.cortexa57
+Installed: busybox-hwclock-1.35.0-r0.cortexa57
+Installed: busybox-syslog-1.35.0-r0.cortexa57
+Installed: busybox-udhcpc-1.35.0-r0.cortexa57
+Installed: dbus-1-1.14.8-r0.cortexa57
+Installed: dbus-common-1.14.8-r0.cortexa57
+Installed: dbus-tools-1.14.8-r0.cortexa57
+Installed: dosfstools-4.2-r0.cortexa57
+Installed: eudev-3.2.10-r0.cortexa57
+Installed: glibc-binary-localedata-en-gb-2.35-r0.cortexa57
+Installed: glibc-binary-localedata-en-us-2.35-r0.cortexa57
+Installed: init-ifupdown-1.0-r7.qemuarm64
+Installed: init-system-helpers-service-1.62-r0.cortexa57
+Installed: initscripts-1.0-r155.cortexa57
+Installed: initscripts-functions-1.0-r155.cortexa57
+Installed: kernel-5.15.124-yocto-standard-5.15.124+git0+f484a7f175_f0e7afd594-r0.qemuarm64
+Installed: kernel-image-5.15.124-yocto-standard-5.15.124+git0+f484a7f175_f0e7afd594-r0.qemuarm64
+Installed: kernel-image-image-5.15.124-yocto-standard-5.15.124+git0+f484a7f175_f0e7afd594-r0.qemuarm64
+Installed: kernel-module-nls-utf8-5.15.124-yocto-standard-5.15.124+git0+f484a7f175_f0e7afd594-r0.qemuarm64
+Installed: kmod-29-r0.cortexa57
+Installed: ldconfig-2.35-r0.cortexa57
+Installed: libasound2-1.2.6.1-r0.cortexa57
+Installed: libattr1-2.5.1-r0.cortexa57
+Installed: libavahi-common3-0.8-r0.cortexa57
+Installed: libavahi-core7-0.8-r0.cortexa57
+Installed: libblkid1-2.37.4-r0.cortexa57
+Installed: libc6-2.35-r0.cortexa57
+Installed: libcap-2.66-r0.cortexa57
+Installed: libcrypt2-4.4.33-r0.cortexa57
+Installed: libcrypto3-3.0.11-r0.cortexa57
+Installed: libdaemon0-0.14-r0.cortexa57
+Installed: libdbus-1-3-1.14.8-r0.cortexa57
+Installed: libexpat1-2.5.0-r0.cortexa57
+Installed: libffi8-3.4.4-r0.cortexa57
+Installed: libglib-2.0-0-1:2.72.3-r0.cortexa57
+Installed: libkmod2-29-r0.cortexa57
+Installed: liblzma5-5.2.6-r0.cortexa57
+Installed: libmount1-2.37.4-r0.cortexa57
+Installed: libnss-mdns-0.15.1-r0.cortexa57
+Installed: libpcre1-8.45-r0.cortexa57
+Installed: libreadline8-8.1.2-r0.cortexa57
+Installed: libtinfo5-6.3+20220423-r0.cortexa57
+Installed: libtirpc3-1.3.2-r0.cortexa57
+Installed: libudev1-3.2.10-r0.cortexa57
+Installed: libx11-6-1:1.7.3.1-r0.cortexa57
+Installed: libxau6-1:1.0.9-r0.cortexa57
+Installed: libxcb1-1.14-r0.cortexa57
+Installed: libxdmcp6-1:1.1.3-r0.cortexa57
+Installed: libxml2-2.9.14-r0.cortexa57
+Installed: libz1-1.2.11-r0.cortexa57
+Installed: locale-base-en-gb-2.35-r0.cortexa57
+Installed: locale-base-en-us-2.35-r0.cortexa57
+Installed: modutils-initscripts-1.0-r7.cortexa57
+Installed: ncurses-terminfo-base-6.3+20220423-r0.cortexa57
+Installed: netbase-1:6.3-r0.noarch
+Installed: openssh-8.9p1-r0.cortexa57
+Installed: openssh-keygen-8.9p1-r0.cortexa57
+Installed: openssh-scp-8.9p1-r0.cortexa57
+Installed: openssh-sftp-server-8.9p1-r0.cortexa57
+Installed: openssh-ssh-8.9p1-r0.cortexa57
+Installed: openssh-sshd-8.9p1-r0.cortexa57
+Installed: openssl-conf-3.0.11-r0.cortexa57
+Installed: openssl-ossl-module-legacy-3.0.11-r0.cortexa57
+Installed: packagegroup-base-1.0-r83.qemuarm64
+Installed: packagegroup-base-alsa-1.0-r83.qemuarm64
+Installed: packagegroup-base-bluetooth-1.0-r83.qemuarm64
+Installed: packagegroup-base-extended-1.0-r83.qemuarm64
+Installed: packagegroup-base-ipv6-1.0-r83.qemuarm64
+Installed: packagegroup-base-nfs-1.0-r83.qemuarm64
+Installed: packagegroup-base-usbgadget-1.0-r83.qemuarm64
+Installed: packagegroup-base-vfat-1.0-r83.qemuarm64
+Installed: packagegroup-base-zeroconf-1.0-r83.qemuarm64
+Installed: packagegroup-core-boot-1.0-r17.qemuarm64
+Installed: packagegroup-distro-base-1.0-r83.qemuarm64
+Installed: packagegroup-machine-base-1.0-r83.qemuarm64
+Installed: rpcbind-1.2.6-r0.cortexa57
+Installed: run-postinsts-1.0-r10.noarch
+Installed: shadow-4.11.1-r0.cortexa57
+Installed: shadow-base-4.11.1-r0.cortexa57
+Installed: shadow-securetty-4.6-r3.qemuarm64
+Installed: shared-mime-info-2.1-r0.cortexa57
+Installed: sysvinit-3.01-r0.cortexa57
+Installed: sysvinit-inittab-2.88dsf-r10.qemuarm64
+Installed: sysvinit-pidof-3.01-r0.cortexa57
+Installed: update-alternatives-opkg-0.5.0-r0.cortexa57
+Installed: update-rc.d-0.8-r0.noarch
+Installed: util-linux-sulogin-2.37.4-r0.cortexa57
+
+Installed:
+  aesd-assignments-1.0+git0+1693f02e5a-r0.cortexa57                             
+  alsa-conf-1.2.6.1-r0.cortexa57                                                
+  alsa-state-0.2.0-r5.cortexa57                                                 
+  alsa-states-0.2.0-r5.cortexa57                                                
+  alsa-ucm-conf-1.2.6.3-r0.noarch                                               
+  alsa-utils-alsactl-1.2.6-r0.cortexa57                                         
+  alsa-utils-amixer-1.2.6-r0.cortexa57                                          
+  avahi-daemon-0.8-r0.cortexa57                                                 
+  base-files-3.0.14-r89.qemuarm64                                               
+  base-passwd-3.5.29-r0.cortexa57                                               
+  bluez5-5.65-r0.cortexa57                                                      
+  busybox-1.35.0-r0.cortexa57                                                   
+  busybox-hwclock-1.35.0-r0.cortexa57                                           
+  busybox-syslog-1.35.0-r0.cortexa57                                            
+  busybox-udhcpc-1.35.0-r0.cortexa57                                            
+  dbus-1-1.14.8-r0.cortexa57                                                    
+  dbus-common-1.14.8-r0.cortexa57                                               
+  dbus-tools-1.14.8-r0.cortexa57                                                
+  dosfstools-4.2-r0.cortexa57                                                   
+  eudev-3.2.10-r0.cortexa57                                                     
+  glibc-binary-localedata-en-gb-2.35-r0.cortexa57                               
+  glibc-binary-localedata-en-us-2.35-r0.cortexa57                               
+  init-ifupdown-1.0-r7.qemuarm64                                                
+  init-system-helpers-service-1.62-r0.cortexa57                                 
+  initscripts-1.0-r155.cortexa57                                                
+  initscripts-functions-1.0-r155.cortexa57                                      
+  kernel-5.15.124-yocto-standard-5.15.124+git0+f484a7f175_f0e7afd594-r0.qemuarm64
+  kernel-image-5.15.124-yocto-standard-5.15.124+git0+f484a7f175_f0e7afd594-r0.qemuarm64
+  kernel-image-image-5.15.124-yocto-standard-5.15.124+git0+f484a7f175_f0e7afd594-r0.qemuarm64
+  kernel-module-nls-utf8-5.15.124-yocto-standard-5.15.124+git0+f484a7f175_f0e7afd594-r0.qemuarm64
+  kmod-29-r0.cortexa57                                                          
+  ldconfig-2.35-r0.cortexa57                                                    
+  libasound2-1.2.6.1-r0.cortexa57                                               
+  libattr1-2.5.1-r0.cortexa57                                                   
+  libavahi-common3-0.8-r0.cortexa57                                             
+  libavahi-core7-0.8-r0.cortexa57                                               
+  libblkid1-2.37.4-r0.cortexa57                                                 
+  libc6-2.35-r0.cortexa57                                                       
+  libcap-2.66-r0.cortexa57                                                      
+  libcrypt2-4.4.33-r0.cortexa57                                                 
+  libcrypto3-3.0.11-r0.cortexa57                                                
+  libdaemon0-0.14-r0.cortexa57                                                  
+  libdbus-1-3-1.14.8-r0.cortexa57                                               
+  libexpat1-2.5.0-r0.cortexa57                                                  
+  libffi8-3.4.4-r0.cortexa57                                                    
+  libglib-2.0-0-1:2.72.3-r0.cortexa57                                           
+  libkmod2-29-r0.cortexa57                                                      
+  liblzma5-5.2.6-r0.cortexa57                                                   
+  libmount1-2.37.4-r0.cortexa57                                                 
+  libnss-mdns-0.15.1-r0.cortexa57                                               
+  libpcre1-8.45-r0.cortexa57                                                    
+  libreadline8-8.1.2-r0.cortexa57                                               
+  libtinfo5-6.3+20220423-r0.cortexa57                                           
+  libtirpc3-1.3.2-r0.cortexa57                                                  
+  libudev1-3.2.10-r0.cortexa57                                                  
+  libx11-6-1:1.7.3.1-r0.cortexa57                                               
+  libxau6-1:1.0.9-r0.cortexa57                                                  
+  libxcb1-1.14-r0.cortexa57                                                     
+  libxdmcp6-1:1.1.3-r0.cortexa57                                                
+  libxml2-2.9.14-r0.cortexa57                                                   
+  libz1-1.2.11-r0.cortexa57                                                     
+  locale-base-en-gb-2.35-r0.cortexa57                                           
+  locale-base-en-us-2.35-r0.cortexa57                                           
+  modutils-initscripts-1.0-r7.cortexa57                                         
+  ncurses-terminfo-base-6.3+20220423-r0.cortexa57                               
+  netbase-1:6.3-r0.noarch                                                       
+  openssh-8.9p1-r0.cortexa57                                                    
+  openssh-keygen-8.9p1-r0.cortexa57                                             
+  openssh-scp-8.9p1-r0.cortexa57                                                
+  openssh-sftp-server-8.9p1-r0.cortexa57                                        
+  openssh-ssh-8.9p1-r0.cortexa57                                                
+  openssh-sshd-8.9p1-r0.cortexa57                                               
+  openssl-conf-3.0.11-r0.cortexa57                                              
+  openssl-ossl-module-legacy-3.0.11-r0.cortexa57                                
+  packagegroup-base-1.0-r83.qemuarm64                                           
+  packagegroup-base-alsa-1.0-r83.qemuarm64                                      
+  packagegroup-base-bluetooth-1.0-r83.qemuarm64                                 
+  packagegroup-base-extended-1.0-r83.qemuarm64                                  
+  packagegroup-base-ipv6-1.0-r83.qemuarm64                                      
+  packagegroup-base-nfs-1.0-r83.qemuarm64                                       
+  packagegroup-base-usbgadget-1.0-r83.qemuarm64                                 
+  packagegroup-base-vfat-1.0-r83.qemuarm64                                      
+  packagegroup-base-zeroconf-1.0-r83.qemuarm64                                  
+  packagegroup-core-boot-1.0-r17.qemuarm64                                      
+  packagegroup-distro-base-1.0-r83.qemuarm64                                    
+  packagegroup-machine-base-1.0-r83.qemuarm64                                   
+  rpcbind-1.2.6-r0.cortexa57                                                    
+  run-postinsts-1.0-r10.noarch                                                  
+  shadow-4.11.1-r0.cortexa57                                                    
+  shadow-base-4.11.1-r0.cortexa57                                               
+  shadow-securetty-4.6-r3.qemuarm64                                             
+  shared-mime-info-2.1-r0.cortexa57                                             
+  sysvinit-3.01-r0.cortexa57                                                    
+  sysvinit-inittab-2.88dsf-r10.qemuarm64                                        
+  sysvinit-pidof-3.01-r0.cortexa57                                              
+  update-alternatives-opkg-0.5.0-r0.cortexa57                                   
+  update-rc.d-0.8-r0.noarch                                                     
+  util-linux-sulogin-2.37.4-r0.cortexa57                                        
+
+Complete!
+
+ERROR: Postinstall scriptlets of ['aesd-assignments'] have failed. If the intention is to defer them to first boot,
+then please place them into pkg_postinst_ontarget:${PN} ().
+Deferring to first boot via 'exit 1' is no longer supported.
+Details of the failure are in /home/vboxuser/AESD/assignment-6-Suraj-Ajjampur/build/tmp/work/qemuarm64-poky-linux/core-image-aesd/1.0-r0/temp/log.do_rootfs.
+DEBUG: Python function do_rootfs finished
