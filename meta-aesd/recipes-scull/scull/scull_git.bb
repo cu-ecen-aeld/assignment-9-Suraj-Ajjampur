@@ -19,7 +19,7 @@ SRC_URI = "git://git@github.com/cu-ecen-aeld/assignment-7-Suraj-Ajjampur.git;pro
 PV = "1.0+git${SRCPV}"
 SRCREV = "40aec94968bce910c09fb8d38a1e06167150a3d8"
 
-S = "${WORKDIR}/git"
+S = "${WORKDIR}/git/scull"
 
 inherit module
 
@@ -30,6 +30,9 @@ inherit update-rc.d
 INITSCRIPT_PACKAGES = "${PN}"
 INITSCRIPT_NAME:${PN} = "init.sh"
 
+
+FILES:${PN} += "${bindir}/scull_load"
+FILES:${PN} += "${bindir}/scull_unload"
 FILES:${PN} += "${sysconfdir}/*"
 
 do_configure () {
@@ -49,8 +52,8 @@ do_install () {
 	# https://docs.yoctoproject.org/ref-manual/variables.html?highlight=workdir#term-S
 	# See example at https://github.com/cu-ecen-aeld/ecen5013-yocto/blob/ecen5013-hello-world/meta-ecen5013/recipes-ecen5013/ecen5013-hello-world/ecen5013-hello-world_git.bb
 
-    install -d ${D}${sysconfdir}/init.d
-    install -d ${D}${base_libdir}/modules/${KERNEL_VERSION}/
-    install -m 0755 ${WORKDIR}/init.sh ${D}${sysconfdir}/init.d
-    install -m 0755 ${S}/misc-modules/faulty.ko ${D}${base_libdir}/modules/${KERNEL_VERSION}/
+	install -d ${D}${sysconfdir}/init.d
+	install -d ${D}${base_libdir}/modules/5.15.68-yocto-standard/
+	install -m 0755 ${WORKDIR}/init.sh ${D}${sysconfdir}/init.d
+	install -m 0755 ${S}/scull.ko ${D}${base_libdir}/modules/5.15.68-yocto-standard/
 }
