@@ -11,13 +11,12 @@
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda2f7b4f302"
 
-SRC_URI = "git://git@github.com/cu-ecen-aeld/assignments-3-and-later-Suraj-Ajjampur;protocol=ssh;branch=Assignment8 \
-           file://aesdchar_init \
-                "
-
+SRC_URI = "git://git@github.com/cu-ecen-aeld/assignments-3-and-later-Suraj-Ajjampur.git;protocol=https;branch=master \
+			file://aesd-char-driver_init \
+			"
 # Modify these as desired
 PV = "1.0+git${SRCPV}"
-SRCREV = "aa45bd8a990433aa871aa274505dfa3d41c40ce8"
+SRCREV = "b319ed9e9e20d9841a280060727f10d99e6bf2e6"
 
 S = "${WORKDIR}/git/aesd-char-driver"
 
@@ -28,7 +27,7 @@ EXTRA_OEMAKE += "KERNELDIR=${STAGING_KERNEL_DIR}"
 
 inherit update-rc.d
 INITSCRIPT_PACKAGES = "${PN}"
-INITSCRIPT_NAME:${PN} = "aesdchar_init"
+INITSCRIPT_NAME:${PN} = "aesd-char-driver_init"
 
 KERNEL_VERSION = "5.15.124-yocto-standard"
 
@@ -55,7 +54,7 @@ do_install () {
         # https://docs.yoctoproject.org/ref-manual/variables.html?highlight=workdir#term-S
         # See example at https://github.com/cu-ecen-aeld/ecen5013-yocto/blob/ecen5013-hello-world/meta-ecen5013/recipes-ecen5013/ecen5013-hello-world/ecen5013-hello-world_git.bb
         install -d ${D}${sysconfdir}/init.d
-        install -m 0755 ${WORKDIR}/aesdchar_init ${D}${sysconfdir}/init.d
+        install -m 0755 ${WORKDIR}/aesd-char-driver_init ${D}${sysconfdir}/init.d
 
         install -d ${D}${base_libdir}/modules/${KERNEL_VERSION}/
 
